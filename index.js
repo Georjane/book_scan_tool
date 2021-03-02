@@ -4,6 +4,7 @@ const path = require("path")
 
 const app = express();
 
+app.use(express.static(__dirname+'/assets/images'));
 app.set("views",path.join(__dirname,"views")) 
 app.set("view engine","ejs")
 
