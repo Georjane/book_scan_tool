@@ -1,10 +1,14 @@
 const express = require('express')
+const path = require("path") 
+
 
 const app = express();
 
-let string = '<h1>Hello World</h1>'
+app.set("views",path.join(__dirname,"views")) 
+app.set("view engine","ejs")
+
 app.get("/",function(req,res){ 
-	res.send(string)
+  res.render("homepage"); 
 })
 
 app.listen(8080,function(error) { 
