@@ -5,6 +5,7 @@ const fs = require('fs');
 const pdf = require('pdf-parse');
 
 const app = express();
+const wordsObject = {}
 
 app.set("views",path.join(__dirname,"views")) 
 app.set("view engine","ejs")
@@ -39,6 +40,7 @@ app.post("/processpdfbook", async (req, res, next) => {
 		} else {
 			// return scan id in progress while waiting for processPDF to complete
 			processPDF(res);
+      console.log(wordsObject);
 		}
 	});
 }) 
@@ -47,8 +49,14 @@ const processPDF = async (res) => {
 	let words = await convertPdfToTxt('uploads/mybook.pdf');
 	let wordsToCount = await groupWordsBycount(words);
 	const wordsArray = Object.keys(wordsToCount)
-  console.log(wordsToCount);
+  for (const word in wordsToCount) {
+    wordsObject[word] = {}
+    wordsObject[word]['word_count'] = wordsToCount[word]
+  }
+  // console.log(wordsObject);
 	// scanBook(wordsArray, res)
+      res.render('resultspage', { data: wordsObject})
+
 }
 
 const convertPdfToTxt = async (uploadedBookPath) => {
@@ -64,9 +72,9 @@ const groupWordsBycount = async (words) => {
 	let wordsToCount = {};
 	for(let i = 0; i < words.length; i=i+1) {
 		if(wordsToCount[(words[i]).toLowerCase()] == undefined) 
-			wordsToCount[(words[i]).toLowerCase()] = 0; 	
+		wordsToCount[(words[i]).toLowerCase()] = 0;
 		wordsToCount[(words[i]).toLowerCase()]++;
-	}
+	}  
 	return wordsToCount;
 };
 
