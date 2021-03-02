@@ -1,0 +1,31 @@
+{
+  "name": "book_scan_tool",
+  "version": "1.0.0",
+  "description": "Create a book scan tool",
+  "main": "index.js",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "express": "^4.17.1",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.17.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Georjane/book_scan_tool.git"
+  },
+  "author": "Georjane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Georjane/book_scan_tool/issues"
+  },
+  "homepage": "https://github.com/Georjane/book_scan_tool#readme"
+}
