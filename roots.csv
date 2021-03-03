@@ -1,0 +1,2520 @@
+root_id,root_type,description,Meaning
+1,P,a,"not, without"
+2,P,ab,"away, from, by, off, not, bad"
+3,P,ac,"to, toward, near, tending to; with regard to"
+5,P,an,"not, without"
+6,P,"ant, ante",before
+8,P,anti,"against, before, instead of, opposite"
+13,P,"ben, bene","good, well"
+14,P,"bi, bin, bis","two, twice, double"
+15,P,"bi, bio","life, living matter"
+1137,R,"ceas, ceas(e), ced, ceed, cess","go, move, yield, withdraw, come to an end"
+20,P,"circa, circum",around
+21,P,con,"together, with"
+24,P,de,"reverse, remove, without, undo"
+29,P,di,two
+30,P,"di, di(f)","not, apart, aside, away, between, in different directions"
+31,P,"di, dia","through, between, apart, across"
+4265,R,"sy, syl, sym, syn","together, with, same"
+33,P,dicho,"number two, in two, asunder, unalike, divided, twice"
+34,P,dif,"not, apart, in every direction"
+35,P,"dis, s","apart, away, out, opposite, not, lack of, completely, in different directions"
+40,P,en,"in, within, on, put, upon, at, cause to be, make"
+41,P,endo,within
+43,P,ex,"out of, from, off, forth, up, thoroughly"
+45,P,geo,"earth, soil"
+52,P,hyper,over
+54,P,"hyp, hypo","under, low, together"
+55,P,il,not
+56,P,im,"not, opposite of"
+58,P,in,"not, opposite of, against, without"
+59,P,inter,"between, among, here and there, within, in"
+60,P,intra,within
+61,P,intro,"in, into"
+67,P,"mal, male, mal(a)","bad, evil, wrong"
+72,P,"mill, milli","thousand, thousandth"
+74,P,mis,"bad, wrongly"
+75,P,"mon, mono",one
+78,P,non,not
+80,P,omni,all
+82,P,"pan, panto",all
+86,P,"phil, philo",love
+87,P,photo,light
+89,P,poly,many
+91,P,"pr, pre","before, forth, in front"
+92,P,pro,"for, on behalf of, in place of, instead of"
+93,P,pro,"before, beforehand, in front, forward, down, forth, ahead"
+100,P,"r, re","back, again, anew, away"
+104,P,"retro, rear",backward
+106,P,"s, se","aside, apart from, without, astray"
+107,P,semi,"half, partly"
+108,P,sept,seven
+110,P,"s, sub","under, up to, below, beneath, to the foot of"
+111,P,suf,"under, support, from below, up to, at the foot of"
+2932,P,"el, el(i)",out
+113,P,sur,"over, above, more, beyond, upon"
+4290,S,eam,that which
+4287,S,ity,one who
+118,P,"tran, trans","across, through, over, beyond"
+119,P,"tri, tri(um)",three
+121,P,un,not
+4262,R,"sci, scia, sq",shadow
+132,R,"ac, acro, acm","top, height, tip, end, extreme; point"
+133,R,act,"do, act"
+134,R,"aer, aero, air, ar",air
+137,R,"agr, agri, agro, egr, gri(m)","farming, field, country, wild"
+141,R,"alg, odyn","pain, grief, distress"
+143,R,"all, allel, allel(e), allel(o)","one another, of one another, different"
+147,R,"amb, ambl, ambul","walk, take steps, move, go around, go"
+148,R,"amen, ami, amic, em, imic, m",friend
+150,R,amphi,"both, on both sides, around, two ways"
+153,R,"ander, andr, andro",man
+1100,P,andro,man
+155,R,anim,"life, spirit, soul, breath, anger, pride"
+3537,S,ure,"to, to make, do"
+3536,R,"talisman, telo, teleo, toll","end, aim; complete, perfect, consecrate, tax"
+159,R,"anci, ante, ante(r), van, van(ce), van(t)","before, in front"
+161,R,antho,flower
+163,R,"anthrop, anthropo, pithec","human, man, ape, monkey"
+166,R,apo,"away, off, from, separate, forth"
+1108,S,an,"person, that which"
+170,R,"arch, arche, archi","chief, most important, rule, begin"
+171,R,"archa, archaeo","primitive, ancient"
+178,R,aristo,best
+1109,S,isk,small
+182,R,"aster, astr, astro, astros","star, stars, outer space"
+3794,R,aquil,eagle
+184,R,atmo,"vapor, steam, air, gas"
+185,R,"acoust, aud, audi, audio, audit, obed, obei(s)","hear, listen, obey"
+1112,P,"com, com(m)","with, together"
+188,R,"aut, auto","self, same, one"
+3921,R,orc,oath
+191,R,"bar, baro, bary","pressure, weight"
+1007,S,ent,one who
+194,R,"bel, bell, belli, belli(c), du, vel","war, fighting, contention"
+197,R,"bibl, biblio",book
+200,R,"ba, bi, bin, bis","two, twice, double, two by two"
+201,R,"be, bi, bio, bio(n)","life, living matter"
+202,R,"blast, blasto","cell, primitive, immature cell, bud"
+204,R,"brev, brevi, bridg, brief, cur, curt",short
+205,R,"cab(b), cad, cap, cap(e), caps, capt, chief, chiev, chiev(e), corpo(r)","head, summit, source, leader"
+206,R,"cap, capt","take, hold, grasp mentally, seize"
+208,R,"cardi, cardio","heart, beat"
+210,R,"carn, carna(d), carni, carr, sarc, sarco","flesh, meat"
+211,R,"cat, cata","down, against, completely"
+214,R,"calm, caut, caust, ink","burn, burnt, heat, fire"
+3583,S,erize,"to, to be"
+217,R,"cab, cat, catch, ceipt, ceit, ceiv, cov, cup","take, hold, seize, catch, accept, obtain, receive, grasp, keep"
+218,R,"cel, celebr, cell","rise high, surpass, be eminent, honor, make widely known"
+219,R,celer,"fast, swift, speedy"
+222,R,"cent, centi","hundred, hundredth"
+223,R,"cent, centr",center
+228,R,cept,"take, hold, catch, accept, grasp mentally"
+229,R,cerebr,brain
+232,R,"cert, cert(i)",sure
+235,R,"cream, creme, cret, Christ","ointment, unguent, anointed one"
+236,R,"chrom, chroma, chromat, chromo","color, pigment"
+3851,S,use,that which
+240,R,"chron, chrono, cron",time
+243,R,chrys,"gold, yellow"
+246,R,"caes, chis, cid, cis, scis(s)","cut, kill, shorten"
+1323,S,dillo,small
+248,R,"circ, circl(e), circu, circul, search","ring, circle, wheel, round, around, about"
+1116,R,sui,of oneself
+252,R,"calend, claim, clam, clat, clesi, cr","shout, speak out, cry, declare, announce, first day of the month"
+253,R,"clair, clar, clear","clear, bright; to reveal, show"
+255,R,"climat, climax, clin",sloping region or zone of the earth; ladder ; lean
+256,R,"clud, clus","close, shut"
+3966,S,iff,quality of
+260,R,"cogit, cogn, conn, gnom, gnor, gnos, gnost, nob, not, quaint","know, think, learn; wise, well-known"
+4111,S,ice,"to, to be"
+262,R,com,"together, common"
+263,R,con,"with, jointly, together"
+3902,R,spir,a coil
+3685,R,"fib, fibr","filament, fine thread"
+267,R,"corp, corpo, corpor, corps, cors",body
+3792,S,o,"a, that which"
+270,R,"cosm, cosmo, cosmo(s)","universe, order, skillfully arranged, adornment"
+271,R,"cont, contra, contr(e), contro, counter, countr","opposite, contrary, against"
+272,R,"crani, cranio, graine",skull
+273,R,"creant, cred, credit, grant","believe, trust"
+274,R,"cret, creet","separate, sift, distinguish, understand, decide"
+275,R,"cryph, crypt, grot, grot(t)","hide, hidden, secret"
+276,R,cumul,"heap, pile"
+278,R,"cycl, cyclo, cyclon","circle, ring, wheel"
+1171,S,"ad, ada, ade","product of, that which"
+285,R,"dem, dem(i), demo, demos",people
+288,R,"dendr, druid","tree, oak"
+291,R,"dand(e), dent, odont","tooth, notch"
+292,R,"derm, dermat, dermato, dermis, cut",skin
+297,R,"dex, dic, dic(a), dict, digm, dit, preach","speak, say, tell, show, reveal, proclaim, sample, pattern, proof"
+3919,S,at,"a, that which, result of"
+300,R,"doc, doct, doctrin(e), doc(u)","teach; a particular teaching, a branch of learning"
+301,R,"dam, dang, dom, domin, don, donn, dung","master, mistress"
+305,R,"drama, dramat, drast","play, drama, to be performed, to be done"
+306,R,doubl,"two, twice"
+309,R,"doubt, du, duc, duct, duct(r), duk","lead, leader, bring"
+311,R,dur,"harden, to last, survive, harsh"
+1097,S,s,(plural)
+314,R,"dynam, dynast","power, lord, to be able"
+315,R,dys,"abnormal, bad, difficult"
+316,R,"ego, ego(t)","self, I"
+321,R,"ann, anni, annu, enn","year, yearly"
+323,R,ep,"upon, at, in addition to"
+1081,P,"ep, epi, epi(s)","on, to, upon, in, into, in addition, among"
+326,R,"equ, equi, iqu","equal, equally"
+327,R,"arg; erg, ergo, rg, sur, urg","without work, idle, inert; work"
+329,R,"aesthet, esth, esthes, esthet","feeling, sensation, beauty"
+330,R,"ethn, ethno","race, nation, people"
+331,R,"eu, ev","good, well, normal; happy, pleasing"
+332,R,"ec, ex, exo","from, out of; outside of"
+3572,S,y,"to, to do"
+338,R,"fer, fer(r), fer(t), lat","bring, carry, bear, set, trace"
+3892,S,izing,treating in a certain way
+340,R,"feit, feck, fet, ff, fi, fic, fit, fy","make, do, put, build, create, accomplish, work, supply, be adequate, easy"
+341,R,"faith, fealt, feder, fi, fid, fid(av), fidel, fid(uc),fy","trust, safe, faith, belief; treaty, league"
+342,R,"fin, fin(e), finit, finit(e)","end, last, limit, set bounds, boundary, border, count"
+344,R,"flect, flex",bend
+347,R,"fleur, flor, flour, flower","flower, blossom, zenith"
+3654,R,pan,"fear, terror"
+352,R,form,"shape, structure, outer appearance"
+353,R,"fortun, fortun(e)","chance, fate, luck"
+355,R,"fra, frac, fract, frag, frain, fray, fring","break, crush, shout, mitigate"
+356,R,"fug, fugit","flee, run away, escape"
+357,R,funct,"perform, work, operate"
+358,R,"found, font, fus, futil","pour out, melt, fuse, mixed, spread, untrustworthy, pointless"
+360,R,"gastr, gastro",stomach
+362,R,"gen, gend, gene, geno, gon","race, kind, type, class, kin, birth, creation, sex, produce, offspring"
+366,R,"gaea, gaia, ge, geo ","earth, land, soil"
+370,R,"angl, angul, gon","angle, corner"
+374,R,"gram, gramm, graph, graphy","letters, written, writing, recording; small weight"
+375,R,"graff, graph","writing, recording, written"
+376,R,"graph, graphy","writing, recording, written"
+377,R,"grac, grat, grat(e), grat(i), gratuit","pleasing, beloved, dear, thankful, welcome, favor; voluntary"
+379,R,"gyn, gyneco",woman
+1106,R,"art, arti, arti(ll), artis, ert","skill, craft"
+1104,R,"aqua, aquari, aque",water
+382,R,"hecat, hect, hecto",hundred
+385,R,"heli, helio",sun sun
+387,R,"heli, helic, helico","spiral, circular"
+391,R,"hemi, mi",half
+392,R,"em, hemo",blood
+393,R,"hepa, hepat",liver
+395,R,hepta,seven
+396,R,"arb, arbor, herb, herbi","grass, plant, tree"
+397,R,hetero,"different, other, unlike"
+398,R,"hex, hexa",six
+400,R,hilar,"cheerful, joyful, good spirits"
+401,R,"hist, histo",tissue
+402,R,"hol, holo","whole, entire"
+403,R,"hom, hom(i), homin, human","human being, humankind, man, refined"
+404,R,"homeo, homil, homo, nom","like, alike, same, crowd"
+407,R,"hydr, hydra, hydro","water, water serpent"
+410,R,hygro,"moisture, humidity"
+414,R,"iatr, iatro","healer, medical care"
+416,R,"icon, icono","image, statue, portrait, semblance"
+1767,P,idio,"peculiar, personal, distinct"
+964,P,ig,"not, without"
+420,R,"ign, igni(t)","fire, burn"
+424,R,in,"in, into, inside, inwards"
+431,R,iso,equal
+2990,R,ciner,ash
+434,R,"ais, eas, het, jac, ject, jist, jut","throw, send forth, lie down, be situated, comfort, well-being"
+3765,S,olus,that which is small
+438,R,"jun, jun(e), juven","young, younger"
+443,R,"cinema, kines, kinet","movement, motion; moving"
+445,R,labor,"work, toil"
+446,R,"galax, lact, lett, mul",milk
+448,R,later,"side, flank"
+449,R,"lat(r), laund, lav, lot, lug, lut, luv","wash, bathe"
+450,R,"cach, coil, cull, lect, leg, ex, lig, log","gather together, collect, choose, take, speak, read, story"
+453,R,leuk,"white, colorless"
+456,R,"liber, liver",free
+457,R,"lib, libr","book, reading"
+458,R,"leis, lic, licen(t)",to be allowed; permitted; unrestrained
+463,R,"ite, lith, litho, magnet, magnes","Magnesian stone, magnet, mineral, stone, fossil"
+465,R,"lieu, loc, loco","place, from place to place"
+467,R,"lexic, lexico, log, logo, logue, logy, ology","words, discourse, study, reason, phrases, speech"
+469,R,"locu, locut, loqu","speak, talk"
+470,R,"luc, lux","light, brightness, clarity; to shine"
+472,R,lumin,"light, glow"
+474,R,"loon, lun, luna",moon
+478,R,"mag, magn, magn(i), maj, majest, maxim","great, large, authority"
+1191,R,miniat,illuminate in red
+1874,R,"mount, mount(e)","mountain, hill"
+484,R,"main, man, mani, man(n), manu, manipul","hand, handful, handle"
+485,R,"mand, mend","order, praise, entrust"
+3562,S,uring,process of; state or quality
+487,R,"mani, mania","madness, insanity"
+490,R,"mar, mari,  mari(n), mer","sea, ocean"
+493,R,mat,"acting, thinking"
+495,R,"mater, matern, matr, matri, matt","mother, motherly, womb; the source, substance"
+497,R,"demi, mean, med, medi, mezzo","central, in half, in the middle"
+499,R,"mega, megalo","great, large, million"
+500,R,melan,"black, dark"
+503,R,"mem, mem(b), mem(br), memor","remembering, mindful, recall"
+2857,S,abilia,pertaining to
+505,R,"merg, mers","dip, dive, plunge, bury, drown, overwhelm"
+507,R,meso,middle
+508,R,"met, meta, met(h)","change, after, beyond, between"
+1098,R,"alt, alti, alto, hanc, hanc(e), haught, haut, haut(e)","high, grown tall, lofty"
+510,R,"meter, metr, metro","measure, rule, length"
+3745,S,enza,"that which, act of, state of, quality of"
+3593,S,entally,the manner of
+513,R,micro,small
+515,R,migr,"move, shift"
+517,R,"min, minim, minis, minor, minus, minut",small in size or amount; less
+520,R,"mis, miso",hate
+3428,R,"gam, gamet","marriage, husband, wife"
+529,R,"mon, mon(as), monk, mono","one, single, alone"
+530,R,morph,"form, shape"
+532,R,"mori, mort, morti, morti(c)","death; to decay, fail"
+533,R,"mobil, moment, mot, mot(e), mov, mov(e), mut","move, active; instant of time "
+535,R,"mult, multi",many
+536,R,"muni, munit","fortify, defending"
+537,R,"molt, mut, mut(e), mutu","change, alter, done in exchange, borrowed, reciprocal"
+539,R,myo,muscle
+540,R,narr,"tell, relate"
+542,R,naut,sailor
+543,R,nav,ship
+546,R,"neg, ni, ny","say not, refuse; not"
+547,R,"na, neo, neon","new, recent"
+553,R,"nom, nomen, nomin, noun, nown, nym, onomat(o), onym",name
+554,R,non,"no, not, without"
+1759,R,"apert, overt",open
+556,R,"noun, nounc, nunci","speak, declare, report"
+557,R,nov,new
+558,R,"arithm, number, numer",number
+563,R,"octa, octa(ve), octo",eight
+565,R,"ler, oc, ocul, veig","eye, see, bud"
+567,R,op,"in the way, against"
+568,R,"op, ops, opt, opthalmo, opto","eye, sight, see; visible; face"
+569,R,"d'oeuv, euv, of, oper, ur, ur(e)","work, from work"
+3530,R,temer,"heedlessly, rashly, without reason"
+572,R,"opt, optim","best, wish, choose"
+573,R,orb,circle
+575,R,organ,"organized structure, organ, instrument, tool, product"
+576,R,"orth, ortho","right, straight, correct, true"
+581,R,"ox, oxy","sharp, keen, acid"
+583,R,"pale, paleo",ancient
+584,R,"pan, pan(n)","bread, food"
+585,R,"pair, par, para, parat, par(r), per, ver","prepare, make ready, put in order, protect, provide"
+2866,R,"orama, theatr, theater, theor","sight, view, a place for seeing; a looking at, observing"
+594,R,"br, pawn, peach, ped, pedestr, pedi, pion, pod, pus, vamp, vet","foot, shoe, boot"
+1119,S,ia,"relating or belonging to, tendency to"
+599,R,"pent, penta",five
+601,R,"peps, pept, pump","digestion, cook, ripen"
+602,R,per,"through, throughout"
+604,R,"peri, pir, peril","test, tested; try, attempt, attack, danger"
+605,R,phag,"eat, eaten"
+607,R,"phil, phil(e), philo","love, friend"
+3103,R,serpent,"snake, creeping thing"
+609,R,"hem, phon, phone, phonet, phono","sound, voice"
+1200,P,ad,"to, toward, at, near, of"
+614,R,"phos, photo",light
+615,R,phyll,leaf
+617,R,"phys, physio","nature, medicine, the body"
+619,R,"phyte, phyto","plant, to grow"
+624,R,"plas, plasm, plast","form, development; mold, image, figure, shape"
+3466,R,fari,"speak, right, lawful"
+636,R,port,carry
+637,R,"paus, pon, pos, posit, post, pound","put, place, set, specify, pause, stop"
+1094,S,ivity,"state of, quality"
+639,R,"post, poster, pun","after, behind, later, coming after"
+641,R,pre,"earlier, before, in front of"
+647,R,"prot, proto, prot(e)","primitive, first, chief"
+649,R,pseudo,"wrong, false"
+650,R,"psych, psych(e), psycho","mind, mental, soul, spirit"
+652,R,"pugn, pugil","fight , be in conflict, fist, boxer"
+655,R,"poign, point, punc, punct, pung, pung(e)","pierce, point, stab, prick"
+3758,R,"rab, rag","to rave, be mad"
+658,R,"count, put","think, consider,  judge, calculate, prune, cut"
+660,R,"pyr, pyro","fire, heat"
+1325,P,re,"against, opposite, not; again, back to the original"
+662,R,"cadr, quad, quadr, quadr(i), quadru, quar, quart, quatr, squar, tetr, tetra, trapez","four, fourth, square"
+3566,R,"staur, stor, stor(e)","to renew, rebuild, refresh"
+666,R,"cinq(u), quint","five, fifth"
+2526,R,terp,"stem, stock, root"
+669,R,"radic, rhizo, ric",root
+673,R,rami,"branch, forked structure"
+681,R,rhino,nose nose
+683,R,rhodo,"red, rose"
+685,R,"rid, rid(e), ridi, ris","laugh, laugh at, make fun of"
+686,R,"rub, rubi(c), rubr",red
+687,R,"rout, rupt","break open by force, burst"
+689,R,"saur, sauros, saurus",lizard
+690,R,"scend, scens, scent",climb
+3927,S,ant,ten-fold
+692,R,"sci, scit, scient",know
+696,R,"scop, shop, skept","see, examine, observe, consider"
+699,R,"scrib, scrib(b), script, scriv","write, written"
+701,R,"sect, seg, sickl","cut, scythe, sickle"
+702,R,self,"of, for, or by itself"
+704,R,"sen, senesc, sieur, sir, sur","old man, old age, elder; older"
+2093,R,"pan, pant, panto",all
+708,R,serv,"save, keep, guard, protect, watch"
+713,R,"heli, helio, sol",sun
+714,R,"dorm, somn, somni, sop, sopor",sleep
+715,R,"echo, son, sonn, sound","sound, resound"
+716,R,"soph, sophist, sopho, syph","wise, clever, crafty"
+717,R,"pect, spec, spec(i), spect, spectr, specul, spic, spis, spit(e)","see, look, observe, wait for, sighting, kind, species"
+719,R,sphere,"ball, globe"
+1009,S,mony,"product, result, state, quality"
+721,R,"spir, spirit, spright","breathe, breath, soul, vigor"
+722,R,"situ, stanc, stant, stan(z), stas, stasis, stat, status, stitu, stitut, tant","stand, fixed, state, position, condition"
+723,R,stell,star
+725,R,"stri, stroy, stru, struct, stry","build, construct, prepare, teach"
+727,R,"sum, summ","extreme, highest, topmost, principal, chief"
+728,R,"sopran, sov(e), super, suprem","over, above, highest, topmost, worthy of pride"
+735,R,"tact, tag, tax, taxi, tain, tam, tang, tast(e), teg, tegr, tig, ting, tir ","touch, affect, arrange, assess, whole, value"
+4291,S,eated,"made, done"
+740,R,tele,"far away, far off, distant"
+743,R,"temp, tempor, tempest","time, period, season, weather, storm"
+748,R,"tellur, ter, terr, tur","land, earth"
+752,R,"the, theo, thus","god, divine"
+754,R,"therm, thermo",heat
+756,R,"torch, torm, torqu, tors, tort","pain, agony, twist, wind, wrap"
+758,R,"tox, toxic",poison poison
+759,R,"trac, tract, trail, train, trait, traught, tray, treat","pull, draw, drag, influence, lure, bring along"
+4280,S,entity,"pertaining to, relating to, characterized by"
+761,R,"trauma, traumat","hurt, wound, damage"
+762,R,"tre, tri, tri(n), tri(o)",three
+763,R,"tyrann, tyran(t)","lord, master, sovereign, absolute ruler"
+766,R,"inch, ounc, un, uni, unit","one, single, join into one, ounce, inch"
+767,R,urb,city
+768,R,"vac, vacat, vacu, void","empty; to be empty, to have leisure"
+770,R,"ven, vent, venu","come, approach, arrive"
+771,R,"ver, veri, verit",truth
+772,R,"verb, verv",word
+774,R,"se, vers, versat, vers(i), verg, vert, vertebr, vish, vorc, vort","turn, bend, incline, highest point, whirlpool, sink"
+3775,S,tery,place for
+781,R,"vanq(u), vict, vinc","conquer, defeat, overcome"
+782,R,"prud, vey, vi, vic, vid, view, vis, voy, vy","see, foresee, sight, look at, observe"
+784,R,"vi, vict, vit, viv, vivi","live, life, alive"
+1362,R,quant,"how many, how much"
+786,R,"voc, vocabul, voc(i), vouch, vow","voice, call, call upon, voice, word, name"
+788,R,"vol, volunt, volupt","free will, free choice, to wish, personal desire"
+789,R,"volcan,volcan(o), vulcan","burn, Roman god of fire"
+792,R,"vor, vour","eat, eating, consume, ingest, swallow"
+795,R,xeno,"stranger, foreign"
+798,R,"xero, xir","dry, dried"
+799,R,"zo, zo(d), zoo",animal life
+801,R,"zyg, zygot","pair, joined"
+803,S,able,"able to, can do"
+804,S,ac,"pertaining to, one who"
+805,S,acity,"quality of, characteristics of"
+806,S,ade,"act, action"
+807,S,age,"a, act or process, result of, state of, that which"
+809,S,al,"a, like, of,  pertaining to, that which"
+811,S,an,"relating to, belonging to, characteristic of"
+812,S,ance,"a, of, state, quality, action, one who, that which"
+813,S,"ant, ant(e)",a person who
+814,S,ant,"inclined to, tending to"
+815,S,ar,"like, resembling, having, pertaining to"
+816,S,ar,"a person who, that which"
+817,S,ard,a person who does an action
+818,S,arian,"a person who, a thing that, pertaining to, believer in"
+819,S,arium,a place for
+820,S,ary,"of or relating to, state of"
+822,S,ate,"to, to make, to do"
+823,S,ation,"a, act of, state of, process, result of doing something, that which"
+824,S,ative,"tending to, quality of, that which"
+827,S,cracy,"rule, government, power"
+829,S,"cul, cule","slight, small, tiny"
+830,S,cy,"state, condition or quality"
+832,S,dom,"condition of, state, realm"
+836,S,ed,(past tense)
+837,S,ee,a person who
+838,S,eer,"a person associated with, engaged in"
+840,S,ence,"a, quality of, state of, that which"
+841,S,ency,"a, condition or quality, that which"
+842,S,ent,"quality of, state of, that which"
+843,S,eous,"composed of, of the nature of, like"
+844,S,er,more
+845,S,er,that which does or makes something
+846,S,er,a person who does an action
+847,S,ern,"state or quality of, that which"
+848,S,escence,state or process
+850,S,esque,"in the style of, quality of, resembling, tending to"
+851,S,ess,female
+853,S,etic,"pertaining to, relating to"
+854,S,ette,small
+855,S,ful,"full of, quality of"
+856,S,fy,"make, cause"
+863,S,hood,"state, condition, or quality"
+864,S,ial,"relating to, pertaining to, quality of, having, that which"
+865,S,ian,"relating to, quality of, belonging to, resembling, one who"
+868,S,ible,able to be
+869,S,"ic, c","a, state, pertaining to, characterized by, one who, that which"
+870,S,ical,"pertaining to, relating to, characterized by"
+871,S,ify,"to, to make"
+872,S,ile,"relating to, capable of, that which"
+873,S,ily,in what manner
+874,S,ine,"relating to, pertaining to, quality of, that which, one who"
+876,S,ing,action or process of doing
+988,R,add,"to attach to, give to"
+878,S,ious,"like, pertaining to, tending to, quality of"
+879,S,ish,"state of, quality of"
+880,S,ism,"practice of, condition of, behavior of, that which"
+881,S,ist,a person who
+882,S,ite,"resident of, follower, product of, pertaining to"
+884,S,ity,"a, of, quality of, state of, act of, that which"
+886,S,ive,"state, quality of; that which, one who; inclined to, pertaining to"
+887,S,ization,act or process of making
+888,S,ize,"state of, process of, to cause to become"
+889,S,less,"without, lacking, not"
+896,S,"ly, y",manner of
+897,S,ment,"a, quality of, state of, result of, product of, act of, that which"
+898,S,meter,measure
+899,S,ness,state or quality
+902,S,oid,resembling
+904,S,oma,"tumor, swelling"
+908,S,or,a person who
+909,S,orium,"a place for, that which"
+910,S,ory,"pertaining to, relating to"
+911,S,ory,"place for, that which"
+912,S,osis,"process, diseased condition"
+932,S,ship,"state or condition of; skill of; office, position; relation between"
+933,S,sion,"state or quality, that which"
+934,S,some,"characterized by, group of"
+937,S,tion,"act of, result of, state of"
+4282,S,ionality,pertaining to
+941,S,tude,state or quality of
+942,S,ty,"a, state, condition or quality, that which"
+943,S,ular,"pertaining to, relating to, resembling, having"
+944,S,uous,"like, tending to, pertaining to, quality of"
+1527,R,"salubr, salut, salutat","greet, hail, health"
+951,R,"vail, val, valid, val(u)","strong, well, of value"
+953,S,men,"result of, means of, act of"
+954,P,"am, amb, ambi","both, around"
+963,R,"ag, agit, ass, axi, eg, g, ig","do, act, drive, set in motion, weigh"
+1011,R,asper,"rough, irritate"
+1002,R,"or, orat, or(is)","mouth, face; to speak, plead, pray"
+957,S,logy,"word, speech, study, reason, thought, science of"
+959,S,y,"a, state, result, act of, inclined to, quality, pertaining to, that which"
+962,R,"arbit, arbitr","think, judge"
+2535,P,arch,"first, chief, principal"
+1006,R,"arthr, artic, articul","joint; to divide into small joints, speak clearly"
+967,P,as,"to, toward, in, by"
+968,R,astut(e),"artful, clever; shrewd, crafty"
+970,R,"aur, auscult, ot, oto, scout","ear, listen, obey"
+971,R,"au, av, os","bird, birds"
+1003,R,nom,"law, order"
+974,R,"atav, avuncul","remote ancestor, uncle"
+976,S,ose,"full of, having"
+979,R,ign,"bring, bear, beget"
+1008,R,"acerb, acid, acri, acrid, acu, acut, eag, eg","sharp, keen, fierce, bitter, tart"
+980,R,buco(l),"rural, rustic, pastoral"
+983,R,callous,"hardened skin, thick skin"
+3678,S,elier,that which
+985,S,ate,"a, job, rank, type, that which, one who"
+986,R,"cab, caper, capr","goat, resembling a goat; unpredictable"
+987,S,ion,"a, result, act, process, state, quality of, that which"
+990,S,osity,"state, process, condition"
+1103,S,ate,"full of, quality of, state of, having"
+992,R,"aid, adjut, jocund","to help, helpful, pleasant, delightful"
+993,P,ef,"out of, from, thoroughly"
+994,R,"fac, fact, fair, fash, feas, feat, fect","make, do, put, build, create, work, accomplish"
+997,R,isl,island island
+998,R,allow,"to assign, place towards"
+999,R,"ali, alter, altern, alter(c), altr(u), ulter","another, other, second; by turns with the other"
+1005,P,ana,"upon, according to"
+1012,R,"bac, bacteri, bec","rod, bar, stick, little rod"
+1014,P,em,"at, near, in, on, with, within; bring to a certain state"
+1015,P,"sy, syl, sym syn","together, with, same"
+3784,R,elast,"ductile, beaten"
+1017,S,otic,"state or process, that which"
+1018,R,"cern, creet, crem, cret, cret(e), crim(e), crimin","sift, perceive, separate, decide, judge, accuse, offense, crime"
+1020,P,ana,"back, up, again, against, without, throughout"
+1023,R,"cinch, cinct","gird, surround"
+1024,P,de,"down, off, away, from, not, out, thoroughly, apart, to one's detriment"
+1025,R,cipher,"zero, empty"
+1030,P,oc,"to, against, over, down"
+1031,P,co,"with, together"
+1033,R,"col, collet","neck, collar of a dress"
+1034,R,"concil, concili; council","join, win over, make friendly, unite in feelings; public gathering"
+1035,S,atory,"like, for, able to, tending to, characterized by, having to do with"
+3789,R,aps,"to bind, fasten, touch"
+1037,R,"cop, copi, op","plenty, wealth, abundance"
+1038,R,"cardi, cardio, cor, cord, cour",heart
+1040,P,cosmo,"universe, order, decoration"
+1041,R,"ples, polic, polic(e), polis, polit","city, citizen, citizenship"
+1044,S,ul,repeated action
+1047,P,suc,"below, under"
+1048,R,curs,"run, hurry"
+1049,S,or,something that performs a specific action
+1050,R,"coars, cor, corr, cour, cours, cur, curr","run, hurry, go on, continue"
+1051,R,"cur, curt",short short short
+1053,R,"dec, deca, decim, dim ","ten, tenth"
+1054,R,"del, delet(e), deleter","destroy, wipe out; destroyer"
+1056,S,um,"of, full of, having, pertaining to, that which"
+1060,R,"dors, dors(e), doss",back
+1061,P,ec,"out of, from"
+1154,P,ant,"against, instead of, opposite"
+1063,R,"doubt, dubi, dubit","doubt, hesitate"
+1064,S,ous,"possessing, full of, nature of, state of, having, pertaining to, like, that which"
+1065,S,ed,having a particular state or thing
+1066,R,facet,"witty, humorous"
+1068,R,"fabric, forg","art, craft, workshop, smith, artisan, workman"
+1070,P,af,"to, toward, near"
+1071,R,"fab, fabul, fac, fair, fat, fat(e), fant, fib, fib(b)","story, talk, speak, tell, prophecy, destiny"
+1072,S,le,"apt to, that which, result of, quality of, state of, of"
+1073,R,"pol, polit(e)","smooth, polish, refine"
+1076,S,tic,"like, pertaining to"
+1077,R,"arr, err, erro(n), errat","wander, make a mistake"
+1078,R,erro(n),"wander, make a mistake mistake"
+1079,R,"arc, ark, erc","confine, control, chest, coffer, enclose, hidden"
+1082,R,"templ, tom, tomy","cut, cutting, a place cut for auguries, observation"
+1083,R,hemer,day
+1084,R,"enigma,enigmat","obscure saying, riddle"
+1085,P,"e, ex","out of, from, up, away, fully"
+4271,S,al,having
+1089,R,"hospit, host","guest, host"
+1090,R,"in, tain, ten, ten(e), tent, tin","hold, reach, occupy, persist, remain, retain, grasp"
+1092,R,"volat, vol(l)","fly, move swiftly, speed"
+1093,R,"ordin, orn",order
+1096,P,aero,air
+1132,R,lat,"carry, bring, bear"
+1113,S,ain,"person who, that which, relating to, resembling"
+1117,P,col,"with, together"
+1118,R,ped,child
+1120,R,"mol, mol(e)","heap, mass; massive structure, disturbance"
+1123,S,ient,"quality of, capable of, tending to, act of, state of, that which, one who"
+1125,P,"equ, equi",equal
+1548,R,"cre, creas, cresc, cret, croiss, cru","grow, arise, appear, multiply, increase"
+1127,R,"cit, civ",inhabitant of a town; community of citizens
+1128,S,il,"of or relating to, tending to"
+1129,R,despot,"lord, master, absolute ruler"
+1130,R,plagiar,kidnapper
+1139,R,sumpt,"take up, get, use"
+1141,R,"vey, vi, voy","road, way, path, journey"
+1145,S,es,(plural)
+1147,R,"cre, creat, creo, sincer, sincer(e)","make, produce, create, cause, pure, clean, whole, genuine, untainted"
+1150,R,"cel, cell","rise high, surpass, be eminent"
+3636,S,lessly,manner of not
+1152,R,"hal, hal(e), halit",breathe
+1156,R,agon,"struggle, contest, conflict"
+1158,S,ry,"a, quality or state of, condition, that which"
+1160,R,"forc, forc(e), fort, fort(i), fort(r)","strong, vigorous, powerful"
+1265,P,peri,"around, enclosing"
+1162,R,"commun, commun(e), common","common, public, general, share, associate, discuss"
+1163,R,"nect, nex","tie, bind"
+1164,R,pol,sell
+1165,R,"corn, corn(u)","horn, point"
+1167,S,et,small
+1168,R,"pl, pleat, plex, plo, ploit, plom, ploy","bend, fold, weave, entwine"
+1170,S,er,measurement of
+1172,S,ury,"of or relating to, having"
+1173,R,"fer, fer(e)","strike, hit"
+1177,P,im,"in, into, on, upon; bring to a certain state"
+1178,R,"porch, port, port(un), port(une)","gate, entrance, harbor"
+1181,R,"leg, leg(it), legis, loy","law, rule, legal right"
+1182,R,"lett, liter","letters, writings"
+1183,P,ir,not
+1185,R,"ist, sist, stic, stit","be, stand, stand firm, stand still, erect, place"
+1186,P,sup,"under, down, up from below"
+3734,S,eat,let him
+1188,P,por,"forth, forward"
+1193,S,atory,place for
+1195,R,"naiss, nasc, naive, nat, nat(e), nativ, natur","birth, nature, origin, a people, race "
+3411,S,iatrist,one who heals
+1198,R,"spec, speci","a sighting, kind, species"
+1201,S,ise,"act of, pertaining to, that which"
+1204,R,"prem, prim, prin, pristin","foremost, first, original, chief"
+3641,R,cygn,swan
+1205,R,sept,"rotten, putrefaction"
+1206,P,ob,"to, toward, before, with, against, down, in the way"
+1207,R,obliqu(e),"slanting, sideways"
+1209,R,obscur,"covered, dark"
+1210,P,of,"to, toward, against"
+1211,R,"offend, offens","strike against, displease"
+1213,R,"her, hes","stick, cling, hold"
+1215,R,"the, them, thes, thesaur, thet, treasur","put, place, arrange; proposition; a store laid up, treasure"
+1216,R,viol,violet
+1217,P,di,"completely, thoroughly"
+1218,R,"grav, grav(e), grief, griev","heavy, serious, burdened"
+1219,P,ag,"to, toward"
+3770,R,cremat(e),to burn
+1221,R,"plur, plus, plus(s)",more
+1222,S,ality,"pertaining to, state of, that which"
+1223,R,"plut, pluto",wealth
+1224,R,"ball, ble, blem, bol","throw, cast, dance, throw oneself around"
+4289,S,uality,"a, that which"
+1228,S,itude,"state or quality, pertaining to"
+1229,R,"poss, pot, potent, pow, puiss","able to, capable, powerful"
+1230,R,"par, pear, per","give birth, produce; come to sight, come forth, be visible"
+1233,R,tasse,cup
+1236,P,medi,middle
+1239,R,ocr,jagged mountain
+1240,S,ator,that which or one who
+1242,S,ium,"state, quality, that which"
+1243,R,stin,"stand, fixed"
+1245,R,meticul,"timid, fearful"
+1246,P,kilo,one thousand
+1248,R,athl,"contest, contestant"
+1249,S,"on, on(t)","state, quality, activity, pertaining to, act of, that which"
+1250,R,"angl, angul","corner, angle"
+1252,R,"se, sex, sext, siesta, sist","six, sixth"
+1253,S,ant,that which or one who does something
+1254,R,"nona, noon, novem","nine, ninth, ninety"
+1255,R,noon,ninth
+3546,S,ital,"like, quality of, pertaining to"
+1258,R,"spond, spons, spont, spous","pledge, promise, reply, answer, willing"
+1259,P,cor,"with, together"
+1264,R,"onco, ph, pher, pher(n), phor, probr","bear, carry; a carrying, burden, mass, reproach"
+1266,R,"quer, quest, quir, quisit, quist","seek, ask, examine, earn, strive for, win"
+1268,P,ac,"more, extra"
+1269,P,ar,"to, toward, at"
+1270,R,rog,"ask, request, solicit"
+1271,P,crastin,"of tomorrow, of the next day"
+1273,R,"arm, arm(a)","arms, weapons"
+1275,S,ior,more of
+1278,S,ulous,"tending to, inclined to"
+1279,R,genu,knee
+1280,S,im,"this, that"
+1281,R,"parl, parl(ia)",speech
+1283,P,"par, para","beside, side by side, separately, beyond, contrary to"
+1284,R,phras,"point out, show, explain; speech"
+1286,R,far,parts
+1287,R,felic,"happy, lucky"
+1288,R,"fer, ferv","boil, glow, hot; yeast"
+1290,P,per,"through, across, over, by means of, thoroughly, large amount"
+3702,S,le,one who
+1293,R,fili,son or daughter
+1294,S,"ess, esse",state or quality
+1297,S,acy,"quality, state or condition, that which; act of"
+1298,R,"flu, fluor, flux","flow, stream"
+1299,R,formid,"dread, fear"
+1300,R,"found, fund, flound","bottom, depths, basis"
+1301,S,er,"to, to do something, to be something"
+1303,R,fraud,"trick, deceipt"
+1304,S,ulent,"rich in, full of"
+1307,R,funer,"funeral, burial"
+1308,R,"fur, furi","rage, be mad"
+1309,R,"ferret, fur, furt","theft, thief, little thief"
+1310,R,"fork, furc",fork
+3894,S,ifist,one who performs an action; one who believes in something
+1315,R,"pecc, pecc(a)","stumble, sin"
+1316,R,"vag, vag(a), vag(r), vagu","wander, roam"
+1318,S,anza,that which does something
+1327,R,"prais, prec, pric, priz","value, worth, price"
+1354,P,as,"out of, from, without"
+1331,R,"card, cart, carto, chart","sheet of paper, map, paper for writing"
+1332,R,"priv, privat, privi","individual, without, not in public life, prevented from having"
+3999,S,iol,"that which, quality of"
+1336,R,"histor, stor","past events, historical narrative; inquire into, examine"
+1339,R,ceremon,"religious rite, observance"
+1341,S,ace,"state of,  resembling, that which"
+1343,S,ador,one who takes action
+1344,P,con,"strongly, thoroughly"
+1345,R,tempt,"despise, slight, disdain"
+3712,R,"hect, och, schem, sketch","form, shape, point in time, condition; state of mind"
+1349,R,"ton, torn, tound, tun","thunder, sound like thunder"
+1350,R,"scarlet, seal, sign, signa(t), signi","mark, seal, sign, signal, distiguishing feature"
+1351,R,"press, prim, print","press, push, exert force against, bear down, crush"
+1353,S,ick,"like, pertaining to"
+1356,S,ival,that which is a place for
+1357,R,"lab, leps, lemma","take, seize, hold, accept; something taken, premise"
+1358,P,re,"thoroughly, completely"
+1359,R,"scent, sens, sensi(t), sent, senti, senti(n)","feel, sense, think, perceive, notice, opinion, judgement"
+3935,P,se,"without, apart, on one's own"
+1363,R,qual,of what kind? in which state? of which sort?
+1364,P,de,"completely, entirely, formally"
+1365,R,"vast, wast, wastr","desolate, laid waste, forlorn, empty, huge, immense"
+1366,R,"trib, tribun, tribut","assign, allot, give credit, pronounce judgement; division of the Roman people"
+1367,R,"ceal, cell, col, cili, cult","hide, hidden, that which covers, hue, eyebrow, storeroom, chamber"
+1368,S,at,make
+1369,S,iency,"a condition, state, or quality"
+1370,R,"test, testi","witness, proof, indicator, testimony, headstrong"
+4286,S,eted,having a particular state or thing
+1374,R,"measur, measur(e), mensur, mens, mens(e)","measure, traverse, estimate, ascertain dimension "
+1375,R,"rai, ray, ry",make ready
+4281,S,entical,"pertaining to, relating to, characterized by"
+1377,S,ome,"mass, group, part of plant anatomy"
+1379,S,sis,"a process, state or condition of"
+1382,P,over,"too much, excessively"
+1383,R,ploit,"fold, bend, twine, coil"
+1384,P,com,"thoroughly, strongly, very"
+1386,R,"grand, grand(i), grann","great, old, grown up, lofty, powerful"
+1390,R,"med, medi, medic","heal, cure, physician"
+1389,R,stem,"stand, fixed place"
+1391,R,"estrang, exter, exter(n), extra, extra(n), extrem, extro, strang","beyond, outside; outward, end, edge"
+1392,R,splend,"bright, shining"
+1393,S,id,"of or relating to, condition, state"
+1394,R,"dain, daint, deign, dign, dign(i)","worthy, deserving; to deem worthy, fitness, importance"
+1399,R,vest,"clothing, dress, garments"
+1400,R,"sur, sur(e)","untroubled, free from care"
+1401,R,print,"to press, exert force against, crush"
+1405,P,ribo,"ribose E, a pentose sugar"
+1406,R,"soma, some","body, mass"
+1407,R,osm,"thrust, push push"
+1409,R,"pl, ple, plet, pleisto, pl(i), pl(y)","full, fill, fill up, most, finish"
+1411,R,"jur, jur(e), jur(g), juris, just","to swear, law, equitable, right, correct, fair"
+1413,R,"auster, auster(e)","harsh, rough, bitter"
+3893,R,limpid,clear
+1416,R,tenu,"thin, narrow"
+1418,R,nupt,"marry, take a husband"
+3701,S,alia,"condition of, act of, state of, that which relates or belongs to"
+1422,R,"sembl, simul","pretend, copy, imitate, make like, appear same"
+1439,P,a,"to, toward, at, in, on"
+1424,R,langu,"be sluggish, wilt, lack vigor"
+4270,R,"xanth, xantho",yellow
+1426,S,or,"state of, quality of, activity of, result of, that which"
+1427,R,"bat, batt","beat, pound, strike"
+1428,R,"ecr, sacr, sacra, sacr(i), sacro, san, secr","sacred, holy"
+4275,S,ata,that which
+1430,R,"pair, par, peer, pir","equal, same, equal value"
+1431,R,"noi, noy, nui, odi","hate, hatred, hateful"
+1433,R,thrall,"bondman, serf, slave"
+1435,R,latry,"worship, servitude"
+1436,R,"gel, geal, gelat, jell","freeze, turn to ice; snow, cold"
+1437,P,be,"to make, to treat or be affected in a certain way; to provide with; completely"
+1438,R,guile,trick or ruse
+1441,R,"les, lid(e), lis","harm, hurt, strike"
+1442,S,ple,fold (a multiplier)
+1446,R,"pter, pter(o), pteryx","wing, feather"
+3589,S,enette,small place
+1448,R,"us, us(u), util","use, make use of, employ, engage in, exploit, custom"
+1450,R,"fatig, fatig(ue)","to weary, tire"
+1451,R,"sol, solac, solat","comfort, mitigate, relieve"
+1452,R,"lim(e), limin, limit","threshold, doorway, point at which something changes; boundary"
+1453,R,"imbu, imbu(e)","to steep, soak, saturate"
+1454,R,"mean, men, min","threaten, lead, guide, drive cattle (with shouts)"
+4269,R,"stich, sticho","verse, line, row"
+1457,R,palp,"stroke, caress, touch"
+1459,R,"cap, capt, cept, chas, cip, cip(l)","take, seize, catch, accept, obtain, receive, grasp, learn, keep"
+1460,R,"pen, penuri","almost, scarcely; lack, want"
+1462,S,ice,"act or period of, one who"
+1463,R,"peat, pet, pet(ul), pit","seek, desire, attack, strive, chase, aim at, beg, appease, encourage"
+1464,S,ual,"of or relating to, for"
+1467,R,"dam, daunt, diam, domit, dompt","tame, subdue"
+1468,R,"solicit, souc","troubled, worried, attentive, anxious, vexed"
+1469,S,ude,state or quality of
+1470,R,melior,"better, to improve"
+1471,R,"lign, line, lin","flax, thread, line, string, cord, net"
+1472,R,"las, lass",weary
+1473,R,palpit,"throb, quiver"
+1476,R,"mant, mantl",cloak
+1477,S,icious,acting like
+1478,R,"cyro, cryst","ice, cold, crystal, freeze, transparent"
+1479,R,gem,"gem, bud"
+1484,S,al,"action, process"
+1485,R,"paper, papyr",paper
+1488,S,le,"little, small (diminutive)"
+1490,S,ure,"shows actions or results, process of, that which"
+1492,R,luct,"struggle, fight against"
+1494,R,"ceas, se, sed, sed(i), sess, sid, sieg, siz","sit, settle, rest, stay still"
+1495,R,"out(r), ult, ultim, ultra","last, farthest away, final, end, goes beyond"
+1496,R,"hum, humb, humil","earth, ground, bury; low, lowly"
+1498,R,"rig, rigi","to be stiff, be unyielding, numb, frozen"
+1501,R,"troub, turb","uproar, commotion, confusion, crowd; whirlwind, whirl"
+1502,R,"lic, lict, linqu","leave, abandon, forsake"
+1503,R,"ton, tun","sound, tone, tension, stretching, pitch"
+1504,R,vit,"shun, avoid"
+1505,P,"su, sus","under, from below, at the foot of"
+1506,R,"pen(ch), pend, pend(ul), pens, pent, pois, pond","hang, weigh, balance, consider, make up for"
+1507,R,vulner,"wound, hurt, tear, damage"
+1508,R,"liber, libr","balance, scales; to be balanced; to weigh; level, to make even"
+1512,R,"caut, cav","beware of, take care"
+1513,R,"pict, pict(o)","paint, embellish, portray, picture"
+1515,R,"peculi, pecun","one's own goods, property, livestock, money"
+1516,R,"anc, anc(e), en, enc, enc(e), i, ir, ish, issu(e), it, itin, unt","go, pass, journey"
+1526,R,"agger, ger, gest, gest(icul), jest","bear, bring, carry, heap up, wear, perform, record"
+1517,R,lent,"tenacious, clinging, sticky; slow; pliant"
+1518,R,"coc, coct, cook, cuis, cuit, culin, kiln, kitch","cook, ripen; room for cooking, cooking stove"
+1521,R,leth,"forgetfulness, drowsy, dull"
+1522,R,arg,"without work, idle, inert"
+1523,R,"eth, ethos","custom, habit, character, disposition"
+1525,R,pto(m),"fall, droop, sag; corpse"
+1529,R,"mark, merc, merch, mercuri","goods for sale, trade, traffic; Roman god of traders and thieves"
+1530,R,miser,wretched
+1531,R,"spas, spasm","draw, tear, rend, pull; tension, convulsion; involuntary contraction"
+1532,R,"steg(o), tect, teg(e), til, tog","cover, shield, conceal, protect; roof"
+1534,R,"matur, matur(e)","ripe, timely; ripen, hasten"
+1535,R,"pract, pragmat","make, do, achieve; deed, act"
+1537,R,"bar, barg(o), barr","rail, barrier, bar"
+1540,R,"sider, sire","star, longing"
+1542,R,"creas, creo, crud, cruel","bloody, raw, undigested, rough, flesh, raw meat, cruel"
+1543,R,"vapid, vapor","steam, emit steam, exhalation, spoiled, flat"
+1545,R,"foil, foli, foli(o)","leaf, sheet"
+1551,S,age,"collective, a group"
+1553,S,able,"deserving to be, worthy of, quality of"
+1554,S,ize,"to, to be, to treat in a certain way"
+1557,P,al,out
+1558,R,"nul, null","no, none"
+1560,R,"spair, sper","hope, favorable"
+1561,R,bridg,short short short short
+1564,R,"arachn, arachni",spider
+3656,S,iality,"pertaining to, state of"
+1566,R,"farm, firm, firm(a)","strong, stable, immovable"
+1567,R,"naus, naut, nois(e)","ship, sailor, seasickness"
+1568,R,agit,"hunt, drive forcefully, set in motion"
+2991,R,custod,to guard
+1572,R,"commod, mod, moder, mold ","measure, guide, restrain, method, manner, rhythm, suitable, useful"
+1573,R,"origin, origin(e)","beginning, coming into being"
+1575,R,"rad, radi, radio, ray","ray, staff, spoke of a wheel"
+1576,S,us,"a, state, quality, pertaining to, that which, one who"
+1577,R,reciproc,"moving back and forth, alternating"
+1580,S,ea,"abnormal condition, quality of"
+1581,R,"omen, omin","prophetic sign, augury"
+1582,R,fam,hunger
+1584,R,seren,"clear, tranquil, unruffled, calm"
+1585,R,"chief, chiev, chiev(e)","head, summit, source, origin, leader, capital, uppermost"
+4273,R,vet,forbid
+1588,R,"mut, mut(e)","speechless, unable to speak, silent"
+1589,R,neutr,neither
+1590,R,"rud, rudi","coarse, unskilled, awkward, uncultured, untaught; rough, unformed"
+1591,S,"ad, ade",person who
+1594,S,acious,"inclined to, abounding in, tendency to be"
+1595,S,"eat, eate",to make
+1596,R,"plac, plea, plead, pleas ","please, satisfy; peace; calm, soothe"
+1597,P,per,"away entirely, to destruction, to the bad"
+1598,R,"dissipat, dissipat(e)","squander, scatter wastefully"
+1599,R,vacillat(e),to waver
+1600,R,"pass, pat, path, path(o), pathos","suffering, disease, feeling, passion"
+1601,R,com,"a merry-making, revel, celebration"
+3835,R,"coin, cune(i)",wedge
+1606,R,merci,"price, reward, wage"
+1609,R,"obliter, oblivi ",forget
+1611,R,exil(e),enforced removal
+1614,R,"sembl, simul","together, at the same time"
+1615,P,en,"greatly, thoroughly, completely"
+1616,R,sum,"take up, put on, ingest, get, use"
+1617,R,sex,gender
+1619,R,botan,"grass, fodder, plants"
+1621,R,"heir, hered, herit","successor, one who receives goods via a will"
+1623,R,"vault, volt, volub, volut, volv, volum","roll, wrap up, turn around, orbit, curve, bend, book"
+1625,P,homo,same
+1626,R,"scler, sclero, skelet","hard, still, dried up, withered"
+1627,P,exo,outside of
+1628,R,"class, classi","fleet, rank, grade, group"
+1632,R,"onomat(o), onym",name name
+1633,R,"text, til, tiss, tl, tl(e), toil ","weave, web, cloth, construct with care, compose"
+1634,R,"ripa, riv, riv(e)","stream, source, riverbank, shore"
+1635,R,"gloss, glott","the tongue, language"
+1638,R,"term, termin","boundary marker, end, furthest point, limit"
+1642,S,ing,"nature of, resembling, worthy of, state of, quality of"
+1644,R,fascin,"a bewitching, charm"
+1645,R,"rav(e), rever","to dream; wander here and there, prowl; behave madly, be crazy"
+1647,R,bryo,"blossom, to swell, young one, to be full"
+1648,S,"iz, ize",to speak or think in a certain way
+1650,S,ant,"state of, quality of, condition, that which"
+1652,S,ety,state or quality
+1653,R,lop,run
+1654,R,"postulat, postulat(e)","demand, request"
+1655,R,"sol, soli, soli(t), sol(o), sull","one, only, alone"
+3925,S,uce,that which
+1659,R,"rod, rod(e), ros, rostr","gnaw, eat away, chew; beak, snout, prow"
+2892,R,"rit, rit(e)",religious ceremony or usage
+1665,R,"mos(a), mus, mus(e)","a Muse, fine art, music, song"
+1667,R,"agor(a), egor, egyr, for, foren(s), for(r), hors","marketplace, public, outside, assembly"
+1668,R,styl,"plant stem, instrument for writing"
+1670,R,gladi,sword
+1671,R,barbar,"foreign, non-Greek"
+1674,S,ician,"practioner of, specialist in"
+1678,R,area,open space
+1679,R,"execut, sec, secut, segu, sequ, sic, su, suit","follow, pursue, carry out, alongside"
+1680,R,"var, vari","diverse, different, numerous, changeable"
+1681,R,congru,"to come together, agree, fit, suit, accord"
+1682,R,"pierc, tus","beat, bruise, pulp, crush, bore through"
+1684,R,scel,leg
+1685,R,"coy, quiesc, quiet, quil, quit","rest, be still, quiet, calm"
+4285,S,asse,state of
+1688,R,"del, delet, deleter, dol, dol(e)","feel pain, grieve, suffer, destroy, wipe out, destroyer"
+1689,R,"hor, horr","tremble, dread, shudder, bristle"
+1690,R,epist,"letter, message"
+1691,R,"hagio, hier, hiero, saint, sanct, sanct(u), sanct(i)",holy
+1692,S,monious,"of or resemblng, tending to"
+1693,R,trepid,"alarmed, anxious, fearful"
+1694,R,"parc, pard, part, parti, port","part, share, division, section, relation, proper degree"
+1697,R,"leag(ue), leg, li, li(ais), lict, lieg, lig, loy,  ly","tie, bind, link, send, choose, appoint"
+1699,S,ice,"quality of, state of, that which"
+1700,R,"vener, venom, venus","worship, revere, honor, goddess of love, love potion, poison"
+1701,P,al,"to, toward, near, at"
+1702,R,"lev, levat, levit, levi, leav, lief, liev, val","light in weight; to raise, to lift, to remove"
+1703,R,"culp, culp(r)","fault, blame, guilt"
+1704,P,coun,together
+1705,R,ecr,"sacred, holy holy"
+1706,S,orous,"possessing, nature of, like, pertaining to"
+1707,R,tim,fear
+1708,R,"sol, solut, solv","loosen, untie, set free"
+1709,R,"add, dat, dic, dit, don, dor, dos, dow","give, gift, grant, decree, place, put, attach to, add"
+3901,R,rept,"crawl, creep"
+1711,S,ail,"action, process, relating to, that which"
+1713,R,"pregn, prehend, prehens, pren, prent, priev, pris, pry","seize, take, reach, grasp, pull, comprehend"
+1714,R,"maci, macro, mec, meag","large, stretched thin, long"
+1715,R,"ampl, ampl(e), ampl(i)","large, wide"
+1716,R,"vad, vas","go, proceed, advance"
+1719,R,"pian, plain, plan","flat, calm, clear, straightforward, level"
+1720,R,harmon,"harmony, agreement, concord, joining, proportion"
+1721,S,a,"state of, that which"
+1723,R,"cod, cod(e)","ancient book, book of laws"
+1724,R,"mend, mendac","fault, false, defect, lying"
+1726,P,ir,"into, in, within; upon, on; towards, against"
+1727,R,"rigat, rigat(e)","provide with a supply of water, wet, moisten"
+1728,R,"direct, dirig","to make straight, arrange, guide"
+1729,R,crisp,curly
+1730,R,"gull, guttur","gullet, throat, appetite, swallow"
+1731,R,haust,"drain, draw water, drink, draw out"
+3782,R,sibil,"to hiss, whistle"
+4293,P,au,"at the, to the, with"
+1734,P,ap,"to, toward, near, at"
+1736,S,el,small
+1737,R,rumin,"throat, gullet"
+1739,R,"plag(ue), plain, plaint, plankt, plect, pleg, plex","strike, beat, mourn for"
+1741,R,"pac, pac(i), pact, peac, peas,  pay","peace, agree, make a bargain"
+1742,R,"stig, strain, straint, strait, stress, string, strict","draw tight, tighten, confine, bind"
+1743,R,"dress, droit, ert, right, rg, rt","make straight, arrange, guide, direct"
+1744,R,"oner, onus","burden, load"
+1745,R,ranc,"be rotten, stink"
+1748,P,a,"away, from, by, off, out"
+1749,S,ally,in the manner of
+1750,R,"auct, aug, augur, august, auth, auxil","increase, enhance; venerable, powerful; diviner, seer, creator"
+1751,R,"sarc, sarco","flesh, meat, meat"
+1752,P,il,"in, into, on, at, upon"
+1753,P,an,"to, toward, on"
+1754,R,not,"mark, sign, signify, letter, word"
+1755,R,"torn, tour, tourn(i), turn","circle, circuit, tool for drawing a circle, turn"
+1756,R,"eniz, ent, est, entr, inter, intim, intern, intest, intri(n)","inside, innermost, internal, between, within"
+1758,S,end,"that which, one who"
+1760,R,"mord, mors, mors(e)","bite, hurt, distress; biting"
+1761,R,jubil,raise a shout of joy
+1762,R,fess,"confess, admit, acknowledge, speak"
+1763,P,sur,"under, up to, towards, close to, in place of"
+1765,S,itious,"of the nature of, pertaining to"
+1766,R,"pall, palli","cloak, cover"
+3131,S,ates,make
+1769,R,"dogma, dogmat, dox","opinion, belief, glory"
+1770,R,rhetor,public speaker
+1772,R,und,"wave, rise in a wave, flood, flow"
+3649,R,asyl,sanctuary
+1774,R,iron,"dissimulation, assumed ignorance"
+1775,R,"sermon, sert, xert","join, connect; string together words"
+1777,R,"cop, cop(se), coup","hit, cuff, blow"
+3623,S,otic,abnormal condition
+1780,R,"sail, sal, sal(l), sault, sil, sult, ult","leap, spring forward, jump, dance"
+1781,R,"cumb, cumbr",obstacle
+1782,R,"tacit, tic","silent, quiet"
+1783,R,stolid,"stupid, brutish, inert"
+1784,R,"nec, necro, nic, noc, nox, nuis","harm, offense, death, injury, damage, conflict, corpse"
+3722,R,opl(y),"arms, armor"
+1786,P,op,"to, toward, against"
+1788,P,abs,"away, from, by"
+1789,R,"scrupl, scrupul","anxiety; doubt; a small, sharp pebble"
+1790,R,"ess, exact, exam, examin, exig","enforce, demand, test, measure out, weigh out"
+1791,S,ence,action of
+1795,R,"fac, fac(t), fic","face, form, surface"
+1796,R,strid,"make harsh sounds, whistle"
+1797,R,perme,"pass through, penetrate"
+1798,R,innu,to nod to
+1799,S,endo,"doing something, act of"
+1802,R,fluct(u),"wave, undulating movement"
+1803,R,"sperm, spora, sporad","scattered, dispersed, seed, a sowing"
+1805,R,"gen, genea, gent, genu, ingenu, jaunt","birth, tribe, family; kindred, honest, festive spirit"
+1807,R,"proach, proch(e)","near, come near"
+1809,R,ult,"dance, leap"
+1810,R,nebul,"mist, cloud"
+1811,R,"laud, laudat, low","praise, allot, grant"
+1812,R,"lab, laps, laps(e), valanche","slip, fall, descend"
+1815,R,"ten, tend, tens, tent, tetan","stretch, extend, hold, strain, move, struggle, tendon"
+1816,R,ver,"fear, feel awe"
+1817,R,"vic, vicis(s), vic(e)","change, instead of, substitute"
+1818,R,"hum, humor","to be moist, be wet"
+1820,R,"mass, mess, mis, miss, mit, mitt","put, send, let go, abandon"
+1823,R,"cens, cise","assess, judge, rate"
+1827,R,"cierg(e), serf, serg(e), serv, servit","wait on, serve, slave"
+1832,R,lament,"bewail, weep"
+1833,R,lacon,"concise, abrupt"
+1834,R,"vir, virtu","man, manliness, excellence of character, courage, strength"
+1835,R,"garn, grain, gran, grange, gree, gren, grog","grain, seed"
+1836,R,"capit, cattle, cap, cep, chapt, chatt, chef, cip, cipit ","head, summit, source, main, origin, leader, capital"
+1838,R,"vic, vitu","flaw, defect, moral failing, criticize harshly"
+1839,R,"vendet(t), veng, vindic, vindic(t)","claim, avenger, surety, defender, revenge"
+1841,R,mutilat,"maim, cut off, lop off"
+1842,R,"sinu, sinu(s)","curve, wind, fold, hollow"
+1843,R,"prop, propri","one's own, personal, special, proper, fitting"
+1845,S,asm,that which
+1846,R,"vel, veal, veil","covering, cover, curtain, woven cloth"
+1847,R,uber,"fertile, plentiful"
+1848,R,taph,tomb
+1849,R,parent,parent
+1850,S,age,relationship
+1851,R,manifest,"obvious, clearly visible, caught red-handed"
+1852,R,"fan, fan(e), feast, fest, fet, fet(e)","temple; a feast, merrymaking, holiday"
+1854,R,verber,"beat, strike"
+1857,R,strateg,"general, army commander"
+1860,R,"sever, sever(e)","grave, strict, austere, stern"
+1861,R,pud,"ashamed, modest"
+1862,R,"aim, esteem, estimat","fix the value of, estimate, consider"
+3793,S,ie,"quality of, state of, that which, act of"
+1869,R,"abol, abolit","destroy, disallow, get rid of"
+1870,R,tedi,"weariness, irksomeness, ennui"
+1871,R,"delic, delect, delight, dilect, dilett, dilig, lac, lasso, lic, lusc","pleasure, delight, please, entice, love, snare, rope, lure"
+1872,R,"mal, male, mal(a), mal(ad)","bad, evil, wrong"
+1875,S,ability,"state, condition, quality of, able to be"
+1878,R,opaqu(e),"not transparent; shaded, shady; dark"
+1879,R,dorm,sleep sleep
+1880,P,pur,"forth, ahead, forward"
+1969,R,labyrint(h),maze
+1883,R,"hort, hortat","urge, encourage"
+1884,R,"soil, sull, sull(i)","piglet, hog, swine"
+1886,S,ibly,manner of able to be
+1887,R,"play, pli, plic, plight","fold, bend, twine, coil, enfold, attach"
+1890,R,"vestig, vestig(e)",footprint
+1891,R,"precar, precat, precat(e)","pray, entreat"
+1893,R,"sang, sangr, sanguin","blood, humor"
+1894,R,"cip, cipit","head, summit, source, origin, leader, first"
+1895,R,ord,"order, row, series"
+1896,R,"cov, cup","wish, want, desire, long for"
+1897,S,et,"to make, to do"
+1898,R,"machin, machin(e), mechan","machine, plan, trick, artifice, device"
+1899,R,dul,"deception, guile, trickery"
+4112,P,i,"not, without"
+1901,P,vari,"diverse, different, numerous, changeable"
+1902,S,ite,"to make, do"
+2768,R,"veil(l), veget, vigil, vigor","watch, be awake, be alert, give energy, liveliness, activity, strength"
+1906,S,it,tending to
+1907,R,"quot, quot(i)","as many as, how many?"
+1909,R,"devic, devis, devis, divid, divis","separate into parts, divide"
+1911,R,liter,pound
+1913,S,erty,"state, condition or quality, that which"
+1914,R,"frequenc, frequent","crowded, repeated, constant"
+1916,S,a,(plural noun)
+1927,S,ment,"to, to make; place or object of an  action"
+1919,S,er,"state of, that which, one who, result of, pertaining to"
+1926,R,"hor, hor(iz)","boundary, bound, divide, mark off"
+4276,R,"ben, bene","good, well"
+3565,S,ets,small (plural)
+1928,R,"burs, purs","bag, purse, treasurer, hide, skin, wineskin"
+1929,R,"habit, habitat","dwell, dwelling"
+1933,R,"rend, rent, trait, tray, treas, ven, vend","hand over, deliver, give back, set forth, sell, sale"
+1935,R,"plen, plent, plethor","full, fullness, abundance, excess"
+1943,R,pair,"worse; diminish, weaken; inferior in quality or condition"
+3525,S,ishment,"quality of, state of, result of, product of, act of, that which"
+1945,S,ish,"to, to do, make"
+1947,R,"petit, petit(e)","seek, attack, go for, chase, aim at, beg, request"
+4268,S,ane,mixture of
+1950,S,ified,made
+1951,R,"tech, techn, techno, tect, tecton","skill, art, craft, system, method, builder, worker, craftsman"
+1952,S,ique,pertaining to
+1953,R,"mnemon, mnes","remember, memory"
+1954,R,tard,slow
+1955,R,host,enemy
+1956,S,ility,state or quality
+1957,R,"soci, socio","companion, partner, friend, living with others"
+1958,R,"al, al(i)","feed, nourish, cause to grow"
+1959,S,esce,action or process
+1962,S,odic,"state or process, relating to"
+1965,R,karyo,"nut, walnut; kernel; cell, cell nucleus"
+1970,R,morb,disease
+1971,R,patron,"guardian, protector"
+1973,R,"plac, plac(e), plat, plat(e), piaz(z)","flat, broad"
+1974,R,pomp,"celebratory procession, ostentation"
+1976,R,stimul,"goad, whip, spur"
+1977,P,ab,"very, thoroughly"
+1978,R,surd,"deaf, dull, mute"
+1980,S,ist,quality of
+1981,R,drom(e),"a course, running, race"
+1982,R,fiss,"cleave, split"
+1983,R,facult,"skill, accomplishment, learning"
+1984,S,ies,plural
+1985,P,sum,"under, below"
+1986,R,"mon, monit, mon(s), monstr, monu, must","warn, advise, remind, show, point out, teach; a portent; monster"
+1987,S,itudinous,"pertaining to, characterized by"
+1989,R,"tamper, temper, temper(a), temperat","regulate, mix properly, exercise moderation, modify"
+1990,R,"mulg, vulg","make common, of ordinary people, publish"
+1991,S,acle,that which or one who does or receives
+1993,S,uble,capable of
+1994,R,parri,relative
+1995,R,scept,regal staff
+1999,R,cre(e),"separate, sift, distinguish, understand, decide"
+2000,R,"fam, fam(e)","reputation, rumor, report, public opinion, renown"
+2001,R,"frater(n), fratr(i), friar",brother
+2002,R,"cest, cest(r)","go, yield, come to an end, move"
+2003,P,an,before
+2004,R,vill,"farmhouse, rustic"
+2005,R,"pain, pen, pent, pine, poena, pun, punit","punishment, fine, penalty, regret, retribution"
+2008,R,"par, petr, petri, petro, pier","rock, boulder"
+2009,R,stal,"stall, place, seat"
+2010,R,libat,to pour an offering
+2014,P,ap,"away, from, thoroughly"
+2016,R,"judg, judic","judge, one who gives an opinion"
+2018,R,"mim, mim(eo)","imitator, mimic, mime"
+2019,R,"chol, choler","bile, gall"
+2020,R,"osm, trud, trus","thrust, push"
+2021,R,"sans, sine","without, not"
+2022,R,"cour, cur, proct, prox, sur","care, take care of, care for, care about, supervise, protect, free from care"
+2023,R,"peck, piqu, piqu(e)","pierce, prick"
+2024,S,ancy,"a, state of being something; act of"
+2029,R,"maestr, magistr, mast, mistr","ruler, leader, master, teacher, model"
+2030,R,jug,"join, yoke"
+4278,S,,
+4279,R,emet,"vomiting, throwing up"
+2034,R,"sorc, sort","lot, fortune, order, condition, rank, class"
+2035,R,"cover, covert, cur, ker","cover, conceal"
+2036,R,"des, dom, domes, domes(t)","house, home"
+2037,S,icile,"like, pertaining to, characterized by"
+2039,R,iota,ninth letter of the Greek alphabet
+2043,R,vok(e),"call, call upon, speak, say, voice"
+2046,R,"past, pastor","feed, graze, nurture, shepherd"
+2048,R,cathar,"purge, purify or cleanse; purification"
+2050,R,"tot, total","whole, entire, all"
+2053,R,proxim,"nearest, next"
+2054,R,satellit,"attendant, member of retinue"
+2055,R,"dens, dens(e)","thick, dense, crowded"
+2056,R,"col, colon, cult","settler, farmer, inhabit, develop, grow, till, maintain, revere"
+2057,S,ured,shows actions or results; state or quality
+2058,R,"oss, ost, osteo, ostrac, oyst","bone, shell, potsherd"
+2059,S,astic,"pertaining to, having the nature of"
+2060,R,"peal, pel, pell, pelt, puls, pult","push, strike, beat, drive, force, call; toss, hurl"
+2063,R,"abl, abil, ad, habil, habil(i), habit, hibit, vend","suitable, fit, dwell; have, hold, handy, handle"
+2064,R,ana,"back, up, again, throughout"
+3936,R,"bilg(e), budg, bulg(e)","leather bag, pouch, ship's hull"
+2068,R,"ol, ole, oil, olive",oil
+2070,R,hyster,"uterus, womb"
+2071,R,"putr, putre","rotten, stinking, decaying"
+2073,S,el,"a, nature of, state of, like, pertaining to, one who, that which"
+2074,R,ren,kidney or kidneys
+2076,R,"pur, pus",fluid from infected tissue
+2077,R,"suad(e), suag(e), suas, suav, suav(e)","delightful, sweet; advise, recommend, urge, make sweet"
+2078,R,virgin,"maiden, virgin, young woman"
+2079,R,"castl, chat, chester, cester","refuge, stronghold, fortified place, camp"
+2080,S,eau,"characteristic of, pertaining to, that which"
+2081,S,etto,diminutive (makes something smaller)
+2083,R,"bor, bourg, burg, burg(l)",fortified place
+2084,S,eois,"composed of, of the nature of, like"
+2086,R,ceit,"take, accept, obtain, grasp mentally"
+3584,R,"gaud, jew, joic, joic(e), joy","rejoice, be glad"
+3908,R,"drac, dracon, drag, rank","dragon, snake, serpent, severe, harsh"
+2090,S,ia,"condition of, act of, state of, that which"
+2091,R,"schol, school","leisure, learned discussion, school"
+2092,R,"san, san(e), sanit, sanitat","healthy, sound; health"
+2094,R,god,"supreme being, deity"
+2097,R,cour,"heart, bravery"
+2098,R,rest,"stay put, stand still, remain; place of repose"
+2101,S,ition,"act of, state of, process of, that which"
+2102,R,"glut, glutt","swallow, gulp down"
+2105,R,hes,"stick, cling, hold fast"
+2106,P,pro,"away, forth from its place, beyond"
+2107,R,glaci,ice
+3513,P,rap,again
+2109,R,coloss,"gigantic, enormous, huge"
+2111,R,"crat, cracy",rule
+2113,R,"orn, orn(a), ornat, ornat(e)","decorate, beautify, arrange"
+2114,R,"sol, solet","to be in the habit of, be accustomed, used to"
+2115,R,ambrosi(a),food of the gods
+2117,R,tar,overcoming
+2118,R,"ard, arid, ars","burn, be on fire; dry"
+2120,R,"ang(u), anxi","narrow; to choke, distress, torment; worried, uneasy"
+2122,R,nurt,"nourish, foster"
+2123,R,"min, mon(t)","lean forward, project, jut out, threaten"
+2124,R,"rhea, rheo, rheum, rhythm, rhym(e)","measured motion, time, order, flow, stream"
+2127,R,"agog, agogue, agon, axi","leading, draw forth, struggle, contest, conflict, worth, worthy"
+2128,R,"indulg, indulg(e)","be lenient, accede"
+2130,R,"costum, custom","become used to, form a habit of"
+2131,R,"apt, ept","suitable, fit, attached"
+2133,S,aneous,"composed of, nature of, state of, like"
+2134,R,"pat, spac","distance, area, expanse, move beyond"
+2135,R,skept,"examine, consider"
+2136,P,suc,"next to, after, up to"
+2137,R,"electr, electro",amber
+2138,S,ode,way
+3998,R,vitr,glass
+2141,S,etor,a person who
+2145,R,"frant, fren, fren(z), phren, phreno","brain disease, delirium; mind, brain"
+2147,R,"fiche, fix, fixt, fy","fasten, nail, secure, attach, clasp, pierce, stare at"
+2148,S,ably,"able, can do in a certain way, manner of"
+4267,R,"ur, urin","urine, compound found in urine"
+2152,R,"fulg, fulmin","shine, flash, lightning"
+2155,R,"treach, tric, tric(k), trig(u), trig(ue)","play tricks, entangle, make difficulties"
+2154,R,phragm,"fence, wall off, stop up; obstruction"
+2156,R,"car, choir, chor, chore(o)","choir, round dance, singers, choral dance"
+2157,R,allocat,"to assign, place towards"
+2159,R,aul,"tube, pipe"
+2162,R,"tribul, trim, trit","rub, thresh, grind, wear away, oppress, afflict, damage"
+2163,R,opal,opal
+2165,R,"gyr, gyro","ring, circle; turning, spinning, whirling, bend, circular motion"
+2166,R,"sparag, spars(e), spers, spers(e)","scatter, besprinkle, spew"
+2167,R,"bill, boil, budg, bull","bubble, boil, stir, round object, sealed document, official paper"
+2168,R,"cant, cent, chant, charm, shant","sing, singing, song, hymn, spell, poem"
+3569,S,"itur, iture","pertaining to, that which"
+2172,R,"morat, mur, mur(e)","delay, stay behind"
+2173,R,"irid, iris",rainbow; iris (colored circle of the eye)
+2174,S,escent,"becoming; to be somewhat, resembling"
+2176,S,ibility,"state or condition; ability to be, worthy of"
+2177,R,"claustr(o), clos, clos(e), cloist",shut or close
+2179,R,"pass, pat","suffer, endure, tolerate, experience"
+3674,S,ionist,one who
+2183,R,"cov, cup, cup(er)","take, hold, grasp"
+2185,R,greg,"flock, herd"
+2186,R,"pol, pul(l)","axis of a sphere, pivot"
+2187,R,"cond, cond(i), sconc(e)","hide, put away, preserve, season, construct"
+4266,R,gemin,twins
+2190,S,urn,"quality of, resembling"
+2192,R,lachrym,tears
+2194,R,"prob, probat, prob(e), proof, prov","prove, test, approve, assent to"
+2196,R,dour,"hard, harsh"
+2198,R,"mon, mun, mun(i), muner","common, public, share, duty, service, gift, function"
+2201,R,"fastidi, tedi","repulsion, irksome, squeamishness, weariness, ennui"
+2200,R,phalanx,"battle formation, battle array"
+2202,R,"age, amp, eem, emi, empl, empt, prompt, ransom","buy, buy back, take, taken out, gain, ready, reward"
+2203,R,"fanc, fant, phan, phant, phas, phat, pheno","cause to appear, show, visible, imagination, apparition"
+3930,S,onable,"deserving to be, worthy of, quality of"
+2206,R,"pest, pist","beat, pound"
+2207,R,my,to shut
+2209,R,scrut,"probe, examine"
+3563,R,tal,"inclination, balance"
+2211,R,delir,"crazy, deranged"
+2212,R,"tend, tendr","delicate, soft, young"
+2213,R,rav,"snatch, grab, seize"
+2214,S,en,state or quality
+2215,R,"chord, cord","gut string, the string of a lyre"
+2216,R,"luster, lustr","illuminate, purify, brighten"
+2217,R,"rap, rapt, rav, rept, rp","snatch, grab, seize; hasty, swift"
+2218,R,"jeal, zeal","ardor, eager rivalry, fierceness"
+2219,R,"scandal, sland","trap, snare, stumbling block, offense"
+2220,S,metry,measure
+2223,R,"corollar, coron, crown","crown, wreath, garland, gratuity"
+2224,R,"alchem, chem",the art of combining base metals
+2227,S,ur,"shows actions or results, that which"
+2229,R,"rad(e), ras, ras(c), raz(e)","scrape, scratch"
+2230,S,ary,"a, that which or one who  does something; place for"
+2231,S,encies,states or conditions
+2232,R,"pi, piat, piet, pit, pit(t), pit(i)","atone, devoted, upright, faithful, dutiful conduct, tenderness"
+2233,S,ic(o),"like, pertaining to, characterized by"
+2235,R,"minist, minstr","to serve, act as a servant"
+2237,R,"faint, feign, feint, fict, fig","pretend, invent, forge, shape; form"
+2239,R,"filt(e)r, filtr","filter, piece of felt"
+2240,R,"eth, ether","upper air, clear sky"
+2241,S,eal,"like, pertaining to"
+2246,R,"scintill, stencil, tinsel","spark, glittering spot"
+2247,R,"garr, gur, gust","talk, chatter, blab"
+2248,R,"stern, strat, stray, street","spread out, layer, strew, extend, throw, pave, lie flat"
+2249,P,ab,"to, toward, near, at"
+2250,R,"cit, citat, cit(e)","set in motion, speak, quote, summon"
+2251,R,etym,true sense of a word
+2255,R,"seas, semin","seed, time for planting"
+2256,R,nic,to not know
+2258,R,"vot, vout","vow, pledge, promise"
+2259,S,atic,"like, pertaining to, characterized by"
+2261,R,"hier, hiero","holy, holy, holy"
+2263,R,intellig,"to understand, learn by reading"
+3642,S,ments,those which
+2267,R,"tol, toler","to raise, carry; bear, endure"
+2269,R,idio,"own, personal, private"
+2270,R,sem,sign
+2271,R,vernacul,"of home-born slaves, native"
+2274,R,"satur, saturn",Saturn
+4002,R,bureau,"desk, cloth covering for a desk"
+2277,R,"ter, terr,  terr(i)","scare, frighten"
+2278,R,"fail, fall, fals, fault, faux","trick, deceive, be in error"
+2280,R,"caval, chival(r)","horse, mount"
+2281,R,scen,"stage, tent"
+2282,S,ario,"pertain to, that which"
+2284,S,oso,"state, process, condition"
+2285,R,"sal, sals, sauc, saus ",salt
+2286,R,"cross, cruci, cru(s), crux",cross
+3640,P,tres,beyond
+2289,R,luxur,"soft-living, sumptuousness"
+2290,S,iate,to make or do
+2292,R,"dam, damnat, demn","loss, penalty, injury; declare guilty"
+2293,R,habitat,dwell
+2294,S,izing,"result of, quality of"
+2296,R,"fer, fierc","wild, savage, cruel"
+2298,R,"cov, cub, cumb","lie down, lie asleep, recline at a table, rest, go to sleep"
+2299,R,"strap, strep, strop, stroph","turn, twist, twine"
+2300,R,"oint, preen, unct","smear with oil, anoint, prune"
+2301,R,viscer,"entrails, internal organs"
+2302,R,"fad, fatu","foolish, silly, insipid, become weak"
+2303,R,lugubri,"mourn, lament, bewail"
+2304,R,"mor, mor(e), moro(n)","feeble, sluggish, dull, stupid, foolish"
+2305,R,"simil, simil(e)",like
+2307,S,orious,"to, to be"
+2310,R,"meddl(e), mel, mixt, misc, misc(e), misce(ll)","blend, mingle, mix"
+2313,R,"peop, popul, pub, publ, puebl","people, common people"
+2314,S,ities,having qualities of
+2315,P,pol,"forth, before"
+2316,R,lut,"mud, dirt, filth"
+2317,R,mor,"custom, habit, manner, humor"
+2318,R,"emper, empir(e), imper, imperat","command, provide leadership"
+2319,R,"cori, courg","hide, leather, skin; thong, shoelace"
+2320,S,ivator,something that performs a specific action
+2324,R,lin(i),"to smear, anoint"
+2325,R,tal,ankle
+2327,R,muse,"to meditate, ponder"
+2328,S,d,having a particular state or thing
+2332,R,succ,juice
+2334,R,rauc,"harsh, hoarse"
+2335,R,sardon,bitter or scornful laughter
+2336,R,prav,evil
+2339,R,human,"humankind, man, refined"
+2341,R,"infer, infern, infern(o), infra","underneath, lower, below; hell, the underworld"
+2342,R,proselyt(e),"stranger, sojourner, convert"
+2343,R,"sepulch, sepulchr","grave, tomb"
+2345,R,"robor, robust","oak, strength, hard, firm"
+2346,R,"fri, frict","to rub, fray, break apart"
+2347,R,oti,"leisure, idle"
+2348,R,"pact, pag, pal, patch, peas, ping, pol, vail, vel","to fix, drive in, set; stake, rural area marked by stakes"
+2350,R,"penanc(e), penitent, penitenc(e), pent","regretting, repenting"
+2351,R,tal,"of such kind, of same kind"
+2352,P,es,out of
+2353,R,"cap, cap(e), chap","hood, hooded cloak"
+2355,R,"eido, ide, ideo, ido, idol, idyll","appearance, form, shape, idea; image, likeness, phantom, specter"
+2357,R,thec,"box, chest, receptacle"
+2358,R,liv,"to be bluish, to be envious"
+2361,R,torp,"to be stiff, numb, lethargic"
+2362,R,"cav, curb, curv, curv(e), varic","bent, curved, grown awry"
+2363,R,"join, joind, joint, jost, joust, junct, just, juxta","attach, join, next to, close, form a link"
+2365,R,"modul, mold","standard measurement unit, small measurement, model"
+2371,R,"alacr, allegr","quick, lively, eager"
+2372,R,iter,again
+2373,S,ulant,"rich in, full of"
+2374,R,"veter, veterin","old, long-standing, beasts of burden"
+2375,R,"fawn, fec, femin, fem(me), fet","woman, fruitful, pregnancy, unborn offspring"
+2376,R,mit,"soft, mellow, mild"
+2379,S,urnal,active during a given period
+2380,R,"di, di(s), journ","day, pertaining to the day, daily"
+2382,P,at,"to, toward, at"
+2385,R,sordid,"dirty, shabby, mean, vile"
+2386,R,cyn,"dog, dogs"
+2388,R,"groc, gross","large, bulky, thick"
+2389,R,"tuit, tut, tut(el)","protect, look after, keep safe, catch sight of"
+2390,R,"pur, pur(e), purg, purgat, pur(i)","clean, pure, spotless; to clean, make spotless"
+2391,R,milit,soldier
+3843,R,"sti, sti(ps)",small payment
+3785,S,inate,"to, to make, to do"
+2395,R,"panach, pen, pin, pinn","feather, tuft of feathers, wing, peak, point"
+2396,S,manship,art or skill
+2397,S,ied,state of being
+2400,R,"vibr, vibrat",shake
+2401,R,"stinct, tinct, ting(u)","pierce, prick, quench"
+2402,S,iastic,"pertaining to, having the nature of"
+3647,S,itage,that which
+2404,R,nomad,roam about for pasture
+2405,R,op,plant juice
+2406,R,hero,"protector, hero"
+2407,S,ine,feminine
+2409,R,"feu, few, focus, foy, fu, fus","hearth, fireplace, fire"
+2410,R,"nour, nutr, nurt, nutrit","nourish, foster, bring up, suckle"
+2411,R,facil,easy
+2412,R,"bas, bas(e), bass","low, short"
+2413,R,"sat, sati, satir, satis, satur","enough, full, sated, rich"
+2415,R,"beast, besti",beast
+2416,R,"ed, ed(i)","temple, house"
+2418,P,"tr, tra","across, through, over, beyond"
+2419,R,bark,"small ship, barge"
+2421,S,ilious,"like, pertaining to"
+2423,R,"caj, cav, cav(e), coy, gaol, jail","hollow, dungeon, cage, coop, hive"
+2424,R,"tow, turr",tower
+2426,R,"car, charit, cher",dear; affection
+2430,R,"hypno, hypno(t)","slumber, sleep"
+2435,S,ina,female
+2436,R,"por, porc, porc(u)","hog, pig"
+2437,R,pine,"thorn, backbone"
+2438,R,"emul, imag, imagin, imit","image, likeness, copy, comparable with"
+2439,R,"main, main(d), man, mans, men, mn","stay, remain, persist, shelter, house"
+3581,S,eries,items which
+2441,R,govern,"guide, steer the ship"
+2442,R,"urg, urg(e)","press onward, press forward"
+2444,R,hesit,be stuck
+2445,S,ivate,"to, to make or to do"
+2446,R,"saf(e), salv","secure, safe, healthy, unharmed"
+2447,R,"colon, column, culmin","projecting object, top, summit"
+3855,S,iot,that which is greater
+2449,S,ery,place for
+2450,R,"pont, ponti",bridge
+2451,S,oon,"like, pertaining to, characterized by, that which"
+3620,S,ible,"deserving to be, worthy of, quality of"
+2456,R,"insul, insul(a), isl, isol",island
+4274,S,inger,state of
+2458,R,"nem, nom","distribute, dole out, allot, manage, apportion one's due"
+2459,R,front,"forehead, foremost part"
+2460,S,ageous,"nature of, result of, state of, quality of"
+2461,R,"paup, pov(er)",poor
+3825,R,cyto,"container, vessel"
+2465,S,iful,"full of, having the quality of"
+3579,S,ished,having a state of
+2467,P,ab(o),"away, from, by, off"
+2472,R,"carb, carbo, carbon","charcoal, glowing coal"
+2473,S,uret,"(indicates) chemical compound, combining, mixing"
+2474,P,am,"to, toward, at"
+2478,R,epistem,"knowledge, know; understand; believe"
+2480,S,iation,"act of, state of, process, result of doing something"
+2484,P,el,"in, into"
+2485,R,"lips, lips(e), lipt",to leave
+2487,R,"heres, heret",choose
+2488,R,"ratio, ration, raign","calculation, reason, judgment, method"
+2489,R,cler,"clerk, clergy"
+2490,R,"bra, brac, brac(e), pretz","arm, upper arm, short"
+2491,R,"odi, odor, odor(i)",smell
+2492,R,"pois, pot",drink
+2493,R,nihil,nothing
+2495,R,"tuber, tuber(c), tum, tumult","lump, swelling, disturbance, uproar"
+2496,R,fasc,"bundle, rod of power, magistrate"
+2497,P,em,"out of,  from"
+2498,R,steno,narrow
+2754,S,ics,(forms plural noun)
+2755,R,"od, ode","way, road, journey, a going"
+2505,S,atious,"state of, quality of, inclined to"
+2508,S,"as, ass",make
+2510,R,fi,"make, do, accomplish"
+2511,S,sm,"practice of, condition of, behavior of"
+2513,R,"audac, av, avar","eager, anxious, desire, yearn for; miser, hoarder of money, bold, daring"
+2514,R,ardu,"steep, difficult to reach"
+2515,R,calamit,"disaster, injury"
+2516,R,"dexter, dextr",right
+2517,R,"triev, triv, trop, trop(h), trop(os)","turn, change, direction, way, manner"
+2518,R,ud(e),sweat
+2519,S,arious,"like, pertaining to"
+2520,R,len,"mitigate, allay, ease; smooth, soft, calm"
+2522,R,"cand, candid, chand, cend, cens","white, shine, hot, clear, unambiguous, set fire to"
+2525,S,ery,"quality or condition, that which"
+2528,R,fortuit,"happening by chance, accidental"
+2529,R,histrion,"actor, stage-player"
+2530,R,"ir, irasc, irat, irrit, irritat","anger, to become angry, provoke, annoy, excite"
+2644,R,"ceil, celest",sky
+2533,R,"pater(n), patr, patri, patro, petr, patt","father, fatherland, guardian, protector"
+2534,R,"flagr, flam, flam(b), flamm, phlegm","burn, flame, heat, inflammation, body fluid"
+2536,R,"timb, typ, typo","drum; to beat; blow, impression, form"
+2537,R,"phob, phobia","fear, abnormal fear of"
+2538,S,tim(e),close association with
+2540,S,it,"state or quality, that which, one who"
+2541,R,lat,"to lie hidden, lurk"
+2542,R,"tail, tall","allot, cut to shape; a cutting, stick"
+3188,R,"frig, friss",to be cold
+3761,R,alis,sheath
+2546,R,ali,other
+2547,R,clan(d),"secret, stealth"
+2550,R,"crav, crev, crep","burst, crack, rattle, break"
+2553,R,olig,"few, little"
+2554,R,"mer, mere, meric, merit","earn, gain, deserve, worthy, share, part"
+2556,S,ocracy,"rule, government, power"
+2643,R,brief,short short
+4264,R,"uirr, uro",tail
+2559,R,"crin(o), cris, crit, crit(e), crit(ic)","judge, separate, decide"
+2563,R,"mall, malle, maul","hammer, to hit with a hammer, to shape"
+2564,R,nug,"trifling; useless, worthless"
+3881,R,serr,saw
+2567,R,glori,"honor, praise"
+2569,R,chondr,"grain, granule, cartilage"
+2570,S,iac,"of or connected with, pertaining to, one who"
+2572,R,"pest, pesti, pesti(l)","pest, rascal, plague"
+2573,R,"realm, rect, reg, regim, reign, rex, regn, rig, roy, rul ","government, right, rule, control, guide, straight, standard"
+2578,R,subter,beneath
+2579,R,inchoat(e),to begin
+2581,R,mur,wall
+2582,R,"vein, ven","blood vessel, channel"
+2584,S,is,"state, quality, that which"
+4292,S,eating,causing
+2586,S,uscle,small
+2587,R,"palat, palat(e)",sense of taste
+2588,R,gamut,scale of medieval musical notes
+2589,S,esimal,small
+2590,R,debil,weak
+2591,R,"cad, cay, chanc, cas, cas(c), cas(u), cid, cheat, chut ","fall, die, happen"
+2592,R,lapid,stone
+2593,P,en,"out, not"
+2594,R,"nerv, neur","sinew, vigor, determination; tendon, nerve"
+3646,P,tram,three
+2597,P,so,"under, until"
+2598,R,"sourc(e), surg, surrect","rise, get up"
+2599,R,"se, sed","without, apart"
+2600,R,seb,"grease, tallow"
+2601,S,aceous,resembling
+2602,R,"therap, therapeut","treat medically, heal"
+2603,R,ungu,"to annoint, smear with oil"
+2604,R,"tox, toxic, vir",poison
+2606,R,"plaud, plaus, plod(e), plos","applaud, clap, strike, beat"
+2609,R,ol,to smell
+2610,R,"sag, sag(e), sap, sav, sav(v), sip","taste, wise, judicious, keen perception"
+2611,R,"calumn, calumni, challeng","to contrive false accusations, find fault"
+2612,R,"stig, stigma, stigmat","prick, rouse, incite, mark, brand, tatto"
+2614,R,"jeo, jew, joc, jocul, jok, jugg","jest, joke, little joke, tricks, child's play, game"
+2616,R,adulat,"to fawn upon, flatter"
+2617,R,bland,"flattering, pleasant"
+2619,R,syco,fig
+2620,R,laparo,the abdominal wall or a part of the abdomen
+2621,R,lobo,"lobe of the ear, vegetable pod"
+2623,R,meri,"middle, in the middle"
+2626,R,pat,"walk, way, path"
+2627,R,carcer,"prison, jail, enclosed place"
+2628,S,ivist,a person who
+3769,S,ain,"to, to do"
+2632,R,"pale, pall","be pale, fade"
+2633,R,pauc,few
+2635,P,pro(d),"away, forth from its place"
+2636,P,re(d),"back, again; intensely"
+2638,R,"scind, sciss","split, cleave, tear apart, cut"
+2641,R,squal,"filthy, unkempt"
+2648,R,"val, wall","rampart, palisade, barrier"
+2651,S,"ier, iere","one who, that which, quality of, characteristic of"
+2652,R,sphinx,riddling she-monster outwitted by Oedipus
+2653,R,vil,"contemptible, mean, base"
+2654,R,spuri,"illegitimate, false"
+3950,S,iasm,that which
+2659,R,"calc, culc","tread underfoot, track, press; heel"
+2666,R,"meditat, meditat(e)","reflect upon, muse over, ponder"
+2667,R,"velt, vuls ","pluck, pull out, stretch, tear up"
+2668,R,lucr,"gain, profit"
+2671,R,"atr, atri","fire, black (from smoke), frightful, cruel"
+2672,R,"can, kenn",dog
+2675,S,icle,of or relating to
+3926,S,"tric, trix",female
+2682,R,tabl,"board, plank, slate"
+2683,P,"tra, tre",three
+2684,R,l(l)is,thread
+2686,P,ob,over
+2687,R,"ed, es",eat
+2688,R,brut,"heavy, stupid, dull, fierce, savage, cruel, inhuman, unfeeling"
+2689,R,fel,cat
+2692,R,dictat,"recite, order"
+2693,S,ated,having a particular state or thing
+2694,R,palati,"Palatine hill, Roman imperial residence"
+2695,R,"pair, pejor, pessim","worst, diminish, weaken"
+2697,S,and,"that which is to be, one who does something"
+2699,P,anni,"year, yearly"
+3993,S,istic,"chracterized by, relating to"
+2701,S,uary,"of or relating to, that which"
+2702,R,"or, ort","rise, begin, be born"
+2703,R,opt,"wish, choose"
+2704,R,"mask, masq","mask, witch, specter"
+2711,R,"rar, rar(e)","loose-knit, spaced thinly, scattered"
+2712,S,"uat, uate","to, to make or do"
+2720,R,var,"bent, grown awry"
+2721,R,esoter,"more within, interior"
+2722,R,canon,"rule, straight rod, standard"
+2723,R,ubiqu,everywhere
+2724,S,itous,of the nature of
+2731,S,ural,"like, pertaining to"
+2733,S,iance,state or quality of; action
+2738,R,"coast, cost","rib, flank, side"
+2744,R,inan(e),"empty, vain"
+2747,R,tep,lukewarm
+2748,R,"farc, farc(e)","to stuff, cram"
+2749,R,interpret,to explain
+2752,S,ics,"study of, knowledge of, process of, condition of, science of, place"
+2758,S,ism,"belief in; name of system, science of"
+2759,R,"phec, phem, phes, phet","speak, speech, saying"
+2761,S,ot,one who
+2762,R,"istl, stl, stol","to set in order, send, letter, message"
+2764,R,"chur(ch), Kyrie","lord, master, lord's house"
+2765,R,"fend, fens, fens(e)","ward off, strike, displease"
+2766,R,"fruct, frug, fruit","bear fruit, enjoy, profit by; thrifty"
+3929,S,om,that which
+2776,R,"macul, mail, mel","spot, stain, mesh, net"
+3059,S,ament,"quality of, state of, that which"
+2775,S,ry,"place for, pertaining to"
+3063,R,potam,river
+3062,R,"hippo, ipp",horse
+3061,R,"obed, obei(s)","listen to, submit to"
+3735,R,"mascul, male",a male
+2794,R,norm,standard
+2795,R,"lud, ludicr, lus","play, performance, game; to play, make fun of, trick"
+2798,R,"batho(s), bysm, byss","deep, depth, bottom"
+2799,R,"lysis, lys(t), lyt, lyz(e)","loosen, destroy, dissolve"
+2806,S,clast,to break
+2807,S,imate,full of
+3704,S,al,"tending to, motivated to, having"
+2811,S,ience,"quality of, state of"
+2815,R,"prol, prolet, prol(i)","offspring, progeny"
+2816,R,"loin, long, longi, loung, loung(e), lung(e)","long, stretched out, far"
+3548,S,oriety,"quality of, state of"
+2818,R,ancill,"slave girl, handmaid"
+2819,S,o,"colloquialism, friendly slang"
+2820,R,"gust, gust(o)",taste
+3624,S,fully,manner of 
+2824,R,cast,"throw, send, fling"
+2825,R,fisc,"purse, treasury"
+2829,S,icade,product of
+3912,S,es,that which
+2967,R,cham(e),on the ground
+2838,R,hegemon,leader
+2840,R,"camar, chamber, comr","room, chamber"
+2842,S,erie,"state of, quality of"
+2843,R,"ed, mel, melo, melod, mer, od","song, sing"
+2844,R,"font, found","pour, melt, fuse, spread out"
+2845,S,anda,things to be
+2849,R,cert,"compete, strive, contend, fight"
+2851,R,truc,"ferocious, grim, savage"
+2852,R,"relat, relat(e)","to bring back, return, tell of"
+2855,R,lanc,"dish, plate; one of the scales of a balance"
+2856,R,trag,goat
+2858,R,"pector, pet","chest, breast"
+2859,R,"member, membr","limb, part"
+2860,R,"ebri, ober, obri",drunk
+2861,R,hent,"doer, worker"
+2863,R,hon,"honor, esteem, repute"
+2864,S,izer,that which causes to become
+2868,S,ulate,"to, to make, do"
+2869,P,acu,"sharp, point, needle"
+2870,R,"cali, calli, kal",beauty
+2871,R,"camp, champ","plain, field"
+2872,S,aign,"pertaining to, characteristic of, that which"
+2873,R,"court, curt, hort, horti","enclosed yard, courtyard, garden, retinue, group of people"
+2875,R,"noct, nox, nyct, nycto","night, darkness"
+2876,S,ulation,"act of, state of, process, result of doing something"
+2878,P,pil,beyond
+2879,R,gri(m),"field, country"
+2880,R,balm,spice
+2881,R,"arteri, arterio, artery, eor, eor(o)","raise, lift; windpipe, artery that lifts the heart"
+2884,S,taneous,"pertaining to, resembling"
+4284,P,micro,small
+2888,S,uance,state or quality of; action
+2890,R,"cast, cast(e), cest, chast, chast(e)","pure, without stain; punish"
+2891,R,"beau(t), bell","pretty, handsome, charming"
+2895,R,demon,"spirit, divine power"
+2898,R,"plor, plor(e)","weep over, wail, cry"
+2929,R,nostr,our
+2905,P,in,"in, into, on, onto, upon, to, toward, make"
+2907,S,in,chemical ending
+2908,S,iosity,"quality of, state of, act of"
+2909,R,"myst, myster","one who has been initiated; secret doctrine, secret rite"
+3895,R,"pleb, pleb(e)","the common people, the multitude"
+2913,S,os,"full of, having"
+2915,P,neg,not
+2916,R,"flict, flig",strike down
+2922,R,cha,"infinite space, infinite darkness"
+2923,S,icate,"to, to make"
+3145,R,verm,worm
+2925,S,ee,"pertaining to, resembling, that which"
+2926,R,uxor,wife
+2927,R,fav,"well-disposed towards, support"
+2928,R,"invit, vie, vy","to entice, incite"
+2931,S,itic,"like, pertaining to, characterized by"
+2933,S,ivism,"practice of, condition of, behavior of"
+2934,R,"toast, torr","parched, burning, boiling, roaring"
+3173,S,ially,manner of
+2944,R,"pred, pree, prey","booty, spoils, plunder"
+2946,R,"fauc, foc","entranceway, throat"
+2947,R,"antic, antiqu, antiqu(e)","old, former, ancient"
+2951,R,hedon,pleasure
+3723,R,trib,"rub, thresh, pound "
+2954,R,miasm(a),pollution
+2955,R,bil,"anger, ill temper, spleen"
+2956,R,"fragr, flair",emit a scent
+2957,R,"pom, pom(e), pom(m), pum(m)","apple, fruit"
+3567,S,atorial,"relating to, pertaining to"
+2960,R,surrect,"rise, get up up"
+2962,R,tabern,"inn, shop, hut, hovel"
+2963,R,"vign, vin, vin(t), win","wine, vine, grapes used to make wine"
+2965,R,"bev, bib(e)","drink, absorb"
+2966,R,jan,"door, gate, endings and beginnings"
+2968,R,"leo, leon, lion",lion
+2969,P,ob,"after, no longer"
+2970,R,"am, amat, amor, amour","love, find pleasure in"
+2971,R,stup,"become amazed, be brainless"
+2972,S,efy,"make, cause"
+2973,P,cor,"thoroughly, completely"
+2974,R,"quarr, quer","complain, protest"
+3890,S,ery,act or practice
+2978,R,scurr,"jester, buffoon"
+2979,R,still,"drop, drip"
+2980,P,archaeo,"ancient, primitive"
+2981,R,"initis, itis","disease of, inflamation of"
+2982,R,"caps, capsul","container, chest"
+2983,S,ule,"small, little"
+2984,R,"dec, decor","adorn, grace, glorify; suitable, proper, graceful"
+2985,S,enda,those which are to be
+2987,R,stult,"stupid, foolish"
+2988,R,terti,third
+2992,R,frustr,in vain
+2998,R,stagn,a pool of standing water
+2999,R,"part, parti(s), partit","divide, part, side"
+3915,S,lain,a person or thing of a specific kind or origin
+3001,R,nost,a return home
+3003,R,"cask, cuss, quas(h), scue","shake, strike, shatter, beat upon, drive away"
+3005,R,"al, al(i), al(ma), al(umn), ol, olesc, esc, ult","begin, grow up, nourished, mature"
+3008,R,"lacerat, lacerat(e)",tear to pieces
+3009,S,itive,quality of; that which; inclined to
+3011,R,manat,"stream, spread, flow"
+3012,R,"de, di, div, jov, Jul, Juli, Jupiter, Zeus","divine, god, Jupiter, Zeus"
+3013,S,inity,"quality of, state of, act of"
+3014,P,super,"over, above, beyond"
+3064,R,"sol, solemn, solid","solid, whole, firm, established, formal, customary"
+3056,R,sto,painted porch
+3021,R,"feebl(e), foibl(e)","lamentable, doleful, pathetic"
+3024,R,gree,crane
+3031,R,"liqu, lix","to flow, to be liquid, extensive, lengthy"
+3032,R,"famil, famili","household, personal group"
+3034,R,hermetic,alchemical
+3036,R,veloc,"fast, swift"
+3039,S,sy,act of
+3041,R,"lax, leas, leash, lish, lush","slack, loose, open, undo, take one's ease"
+3058,R,"aroma, aromat",any spice or sweet herb
+3971,S,etum,garden or woods
+3054,R,"roist, rur, rus, rustic","country, rough, coarse"
+3055,R,"clan, plan, plant","sole of the foot, sprout, offspring"
+3067,P,am,in
+3068,R,"bouqu, boe, busc, bush","bush, wood"
+3070,R,"mus, muscul","mouse, muscle, mussel"
+3071,R,myth,"tale, story, legend"
+3072,R,stomach,"mouth, gullet, throat, opening"
+3074,S,iant,"state of, characteristic of"
+3075,R,"person, person(i)","mask, role, character"
+3076,R,appeal,"to call upon, entreat"
+3077,R,"marvel, mir, miracl(e), miracul, mir(r)","wonder at, admire; amazing circumstance, marvel"
+3081,R,seri,"grave, earnest"
+3085,R,"germ, germin, gnant","sprout, bud, shoot, birth"
+3087,S,ado,"state of, that which"
+3089,R,"grad, gred, gree, gress","step, move, go, degree"
+3090,S,ulty,"state, condition or quality"
+3092,R,cant,"corner, lip of a jug"
+3093,R,"carc(e), cerpt","select, pluck, pick, seize"
+3098,R,rug,"wrinkle, crease"
+3099,R,strenu,"active, vigorous"
+3100,S,endous,to be
+3101,S,anean,characteristic of
+3102,R,"pneumat; pneumon, pulmon","air, breath, spirit; lung"
+3104,S,uity,"quality of, state of, act of"
+3105,P,"enter, entre","between, under"
+3107,R,"ment, minisc","mind, wisdom, advisor"
+3110,R,obscen,"filthy, indecent, lewd"
+3115,R,tantal,always thirsty and hungry
+3116,R,saliv,"taste, spittle, appetitie"
+3117,R,men,"house, abode"
+3119,R,file,"tread, stamp on"
+3121,S,ix,"a, that which"
+3122,R,vicin,neighbor
+3124,R,pharmac,"remedy, drug"
+3127,P,sur(ro),"over, above, more, beyond"
+3128,R,hubr,"wanton violence, outrage, insolence"
+3130,R,"cras, crat",a mixing
+3133,S,ioned,having a particular state or thing
+3134,S,ately,manner of
+3136,R,opin,"think, suppose, imagine"
+3138,R,"sauc, sauc(i)",salted
+3139,P,ne,not
+3140,R,"ind, ind(o)",India
+3141,S,aging,"nature of, resembling, worthy of, state of"
+3143,S,istry,"quality of, practice of"
+3147,S,urous,"possessing, nature of, like, pertaining to"
+3150,R,"glomerat, glomerat(e)","gather into ball-shaped mass, accumulate"
+3152,P,apo," away, off, from, separate, forth, down, change"
+3153,R,"sublim, sublim(e)","uplifted, raised aloft"
+3154,S,erior,more of
+3156,R,turgid,"swollen, inflated"
+3157,S,inal,"like, pertaining to"
+3158,R,franc(h),"freedom, right"
+3160,S,erly,manner of
+3161,R,argu,"find fault with, to reveal"
+3162,S,orite,"state of, quality of"
+3163,S,ense,"quality of, state of; act of"
+3164,S,alion,"tending to, pertaining to, that which"
+3165,R,"langu, lingu","language, tongue"
+3168,R,"clemen, clement","mercy, mildness, calmness"
+3170,R,rate,scold
+3171,R,"tempt, tent, tenta, tentat","touch, feel, test"
+3174,R,element,"component, particle, rudiment, beginning"
+3889,R,"arc, arch","bow, arch"
+3178,R,viol,"force, power, energy, violence"
+3180,P,e,"to, toward"
+3181,S,asy,"quality, state, condition, that which"
+3185,R,sthen,strength
+3191,R,"engin, gen, ingeni","inherent talent, inborn talent, clever device"
+3192,R,"giga, gigant, giganto, titan",giant
+3193,R,nymph,"bride, mistress"
+3194,R,"narc, narciss","numbness, deadness, torpor"
+3195,S,issism,"condition of, behavior of"
+3196,R,cater,cat
+3197,R,pill,hair; to pluck hair from
+3618,P,o,high-pitched
+3200,R,mass,"lump, mass"
+3202,R,character,"stamp, engraved mark, impressed mark"
+3203,R,penetr,"pierce, gain entrance"
+3204,S,ialty,"relating to, pertaining to, quality"
+3205,R,"sit, sit(e)",food
+3206,R,flaccid,"drooping, weak, flabby"
+3208,R,mund,world
+3209,S,ane,"relating to, belonging to"
+3210,S,iary,"that which, or one who, does something; a place for"
+3212,R,adelph,"brother, from the same womb"
+3216,S,et,relating to
+3217,R,"calcul, chalk","pebble, limestone, chalk"
+3218,R,gigant,"giant, huge"
+3221,R,"bas(e), basi, baso, bat, bet","foundation, base; to go, walk, step, tread"
+3223,R,ut,"use, employ"
+3224,S,ensil,that which 
+3225,S,ional,"like, of, pertaining to"
+3226,R,hygien(e),healthful
+3227,R,orex,"appetite, longing"
+3228,P,ac,against
+3229,R,"cause, cus, cus(e), rus(e), rus(h)","reason, motive, charge, find fault, oppose, reject"
+3230,R,no,mind
+3231,R,"vect, veh, vehe, veigh, vex","carry, bring, energetic, forceful, agitate"
+3232,R,"savag(e), sylv","wild, of the woods; forest"
+3233,R,estuar,"creek, tide place"
+3236,S,try,place for
+3241,R,sanat,to heal
+3240,R,clysm,"wash, clean"
+3243,R,mag,"magic, sorceror"
+3245,R,"mino, mens, mes(t)","month, creature of the moon"
+3246,R,infest,"hostile, dangerous"
+3248,S,otism,belief in
+3251,S,ale,"like, of, pertaining to, that which"
+4263,R,"urirr, uro",tail tail
+3254,R,"trem, trembl(e), tremul","shake, tremble"
+3256,R,pars(i),"spare, save"
+3932,P,ne,new
+3258,S,atist,a person who
+3259,S,ry,"one or those who, a collection of"
+3260,R,plum,"feather, down"
+3920,S,itarian,"a person who, a thing that, pertaining to, believer in"
+3561,S,atical,"pertaining to, characterized by"
+3265,S,cle,small
+3478,R,"cari(c), carr(i), car(go), char, charg(e)","wagon, cart; load"
+4014,R,"nod, noose, noue","knot, rope, difficulty, intricacy"
+3960,S,estrian,"pertaining to, one who"
+3274,R,"jost, joust, just, juxta","next to, close"
+3277,P,sug,up
+3279,R,"singl, singul","one by itself, one at a time, alone"
+3280,R,sorb,"suck up, soak up"
+3282,R,possess,"hold, control"
+3284,R,"cousin, soro","sister, mother's sister's son"
+3286,S,oir,that which
+3287,R,ters(e),"clean, wipe away"
+3289,R,hiat,"gape, stand open"
+3913,P,po,"by, through, behind, after"
+3291,S,inize,"to, to treat in a certain way"
+3292,P,"sou, souf",up
+3293,S,ir,something that does something
+3294,S,monial,"a, of or resembling, that which"
+3295,R,hallucin,wander in the mind
+3297,R,arithm,"number, count"
+3298,R,simpl(e),"one-fold, plain, basic, naive"
+3299,S,ton,one who
+3300,R,"escal, scal, scal(e)","ladder, steps"
+3303,R,pill,"pile, pillar"
+3304,R,lurid,"sallow, wan, ghastly"
+3306,R,"top, topo",place
+3307,S,icity,"like, pertaining to, characterized by, that which, quality of"
+3949,R,"aur, oar","breath, breeze"
+3310,R,"omber, umbr, umbr(a)","shade, shadow"
+3311,S,ella,small
+3313,S,olence,state of
+3315,R,"broc, brocc, brooch","pointed stick, spike, projected"
+3316,S,oli,small
+3648,S,acitate,"to, to make"
+3325,R,"tir, tier, tir(e), martyr","to draw, drawn out, endure, witness"
+3326,S,ific,"like, pertaining to, characterized by, causing, that which"
+3327,R,thanas,death
+3328,S,ented,quality or state of
+4272,S,,
+3331,R,lat,wide
+3333,R,secul,"age, world"
+3334,S,cade,procession or spectacle
+3335,R,"capill, shevel",hair
+3339,S,acular,quality of  that which does or receives
+3340,R,"ster, stereo",solid
+3341,S,alist,a person who
+3342,S,itory,of or relating to
+3343,S,eme,unit of
+3345,R,cen,mid-day meal
+3346,S,itory,"place for, of"
+3347,S,orian,one who
+3348,P,socio,"companion, partner, friend"
+3349,S,io,"a, that which"
+3352,R,glyph,to carve
+3355,R,pleas,"please, be acceptable"
+3357,R,pulver,"dust, powder"
+3358,R,col,glue
+3359,R,clav(e),key
+3361,R,chasm,"a yawning hollow, gulf"
+3625,R,"mit, mit(o)",warp thread
+3367,R,priv(e),prevent from having
+3368,S,amus,one who
+3369,S,in,"state of, condition, that which, relating to, of"
+3372,R,duk(e),leader
+3374,S,ingly,manner of
+3375,R,pon,toil
+3924,S,quet,that which
+3377,S,estrial,pertaining to
+3967,R,chang(e),"barter, exchange"
+3380,S,ose,sugar
+3382,R,frivol,"trifling, worthless"
+3383,R,"van, vain, vaunt","empty, hollow, illusory, groundless, futile"
+3947,S,icism,"condition of, behavior of"
+3388,R,puer,"young boy, child"
+3923,S,erone,small
+3391,P,toti,"whole, entire"
+3392,R,rrhage,"a bursting forth, excessive flow"
+3396,R,"horo, hour","hour, time, season"
+3397,R,sicc,dry
+3401,R,iambic,a metrical foot consisting of a short and long syllable
+3402,S,ulet,small
+3403,R,glot,"tongue, language"
+3405,S,ey,"that which, one who"
+3406,R,"melli, mil, molass",honey
+3407,R,pard,"big cat, male panther"
+3408,R,"moil, moll, moll(i)",soft
+3409,R,por,"passage, way, journey"
+3410,R,"trench, truncat, trunk","to cut, lop off"
+3414,S,"u, ue",that which
+3415,R,strep,"shout, make a noise"
+3418,R,fum,smoke
+3420,S,andum,thing to be
+3423,S,oral,pertaining to
+3425,R,cut,skin skin
+3427,P,"mis, miso",hate
+3429,R,polem,war
+3430,R,larg,"generous, bountiful"
+3432,R,re,"matter, fact, truth, actuality"
+3433,R,"deav, debt, du, du(e), dut","owe, ought"
+3436,R,"erem, herm","solitary, lonely, desert"
+3437,P,mi,middle
+3438,S,if,that which
+3439,R,ips,self
+3440,R,didact,"apt at teaching, to teach"
+3442,P,veri,truth
+3446,P,sol,"one, only"
+3447,S,aire,that which
+3449,R,"ent, ess, essent, est, senc, sent","to be, exist, be real"
+3450,R,pelag,sea
+3452,R,veni,"indulgence, pardon"
+3453,S,ula,relating to
+3455,S,alism,belief in; name of system
+3922,S,ia,"an area on map, a place"
+3459,R,"croach, crotch, crouch",hook
+3460,R,"bomb, bound","a humming, booming"
+3461,S,ard,"bold, hardy"
+3462,R,lasciv,run wild
+3463,R,ust,to burn
+3464,R,"o, or, or(i), os, ush","mouth, door, mouth of river"
+3465,R,reas,"to think, consider"
+3468,P,tant(a),"so great, as much"
+3469,S,ul,"small, little"
+3470,P,o,"thoroughly, completely"
+3619,S,ishing,"nature of, resembling, worthy of, state of, quality of"
+3474,R,verd,green
+3479,R,"fil, fil(e), fil(i)","thread, string"
+3480,R,"ec, eco, ecumen, ish, ocese, oc(h)","dwelling, house, jurisdiction, world"
+3481,P,os,in front of
+3482,R,foment,"wood for kindling, poultice"
+3483,R,pat,"to be open, visible, accessible"
+3484,R,patin(a),"plate, dish"
+3485,R,"nucle, nucleo(t)",center of a nut
+3486,S,arity,"like, resembling, having, pertaining to"
+3487,S,ivat,to make or do
+3490,S,und,state of
+3491,P,pro(f),forth
+3492,R,"taint, tinct","to dye, wet, stain"
+3494,P,s,"apart, away from, out, off"
+3495,R,"lit, lit(e)","choose, gather, collect, speak, read"
+3496,R,myri,countless
+3499,R,genar,ten times
+3500,R,palin,"back, again"
+3501,S,ely,"nature of, that which"
+3504,R,"rat, reas, raign","think, consider, calculate, reason, judge, determine"
+3974,S,ta,that which
+3507,R,nu,"cloud, mist"
+3509,R,glutin,"paste, sticky substance"
+3510,R,"bon, bona, bount","good, worthy, excellent"
+3511,S,icler,one who
+3515,S,atim,state of
+3518,R,"vent, vent(il)",wind
+3588,S,iae,those which
+3519,S,ulum,"full of, having, pertaining to, that which"
+3520,S,iculum,that which
+3521,S,icular,"relating to or resembling, characterized by"
+3523,S,uerade,that which
+3524,R,"fust, fut, fut(e)","to suppress, rebut, beat; club, stick, staff"
+3526,S,age,"to, to make or do"
+3527,S,or,to do something
+3528,S,ently,manner of
+3529,S,antly,the manner of
+3532,R,truss,"to twist, wind, wrap"
+3534,R,rhap(s),"sew, weave"
+3539,P,"ind, indi","in, within"
+3540,R,ig,need
+3541,R,ruin,collapse
+3542,R,"col, coul, cull","filter, strain"
+3549,S,idate,"to make, do"
+3550,S,istical,"relating to, characterized by"
+3551,S,erous,"of, possessing, full of, nature of, like, pertaining to, that which"
+3552,S,ousness,"possessing, full of, nature of, state of being"
+3553,S,ionary,of or relating to
+3554,S,ionary,"that which, or one who, does something"
+3555,S,enger,a person who
+3556,S,assed,state of made to be
+3557,S,assment,that which makes 
+3558,S,ually,manner of
+3559,S,orial,pertaining to that which
+3560,S,ically,manner of
+3568,R,"rod, rol, roll, rot, rotund, round","wheel, revolve, round"
+3570,S,ational,pertaining to
+3571,R,pulchr,beautiful
+3573,S,itant,quality of
+3574,S,eum,"that which, place for"
+3575,S,itiously,the manner of
+3578,S,ica,"that which, place of"
+3580,S,ating,"state of making, state of being, quality of causing"
+3582,R,cardin,hinge
+3585,S,anceship,that which
+3586,S,alize,"to, to make, to cause to become"
+3587,S,alized,the state of becoming
+3882,R,obel,sharp-pointed rod
+3592,S,iced,"to, to make, state of"
+3594,R,"cald, cald(r), calor, cauld(r), chaf, chal,  chauf(f)","to be warm, hot; stoke"
+3595,S,eur,"one who, manner of, state of"
+3596,R,"marr, marit","married, united"
+3597,S,itative,"state or quality, that which"
+3599,R,bouch,"mouth, cheek"
+3600,R,ret,net
+3601,S,ina,"like, pertaining to"
+3603,R,echo,sound
+3604,R,pulpit,stage
+3605,S,acing,to be
+3606,S,arly,manner of
+3607,S,"cul, cule","to; result of, act of, quality of"
+3608,S,ilization,act or process of making
+3609,S,astically,"in the manner of, nature of"
+3610,S,ential,"quality of, pertaining to"
+3611,S,entials,"those which, quality of"
+3612,S,eting,action or process of doing
+3613,R,"ag, ig","say, speak, affirm"
+3615,S,y,"one who, those who"
+3616,P,u,not
+3617,P,somer,over
+3621,S,ated,"made, done"
+3622,R,seri,silk
+3627,R,"cout, cout(re), sut",sew together
+3628,S,ered,"state of, with"
+3629,S,eurship,the skill of one who
+3630,R,"plumb, plomb, plum(m), plung(e)",lead
+3631,S,agement,"state of, that which"
+3634,S,ionship,"state or condition of, skill of, that which"
+3637,R,"flat, flav, fle, flout, flut","blow, exhale, play a pipe"
+3638,S,orful,"quality of full, fully"
+3639,R,"pace, pand, pans, pass, past, pawn","step, go, pass by, extend, spread"
+3643,S,om,quality of
+3644,S,ent,"inclined to, tending to, action of"
+3651,S,thon,prolonged activity
+3652,R,ovat,"rejoice, exult"
+3653,R,etio,"cause, responsibility"
+3655,S,olent,"full of, rich in"
+3658,R,"reg, rex, roy","king, sovereign"
+3659,R,"can, can(e), chan(n)","reed, cane, pipe, channel for water"
+3661,S,ister,"a person who, that which"
+3662,R,"gorg, gurgit","whirlpool, deep chasm, abyss, throat"
+3663,R,cliv,"slope, hill"
+3668,R,"figur, figur(e)","a form, shape"
+3669,R,"lign, xylo",wood
+3670,R,bugl(e),"ox, cow, bull"
+3671,R,"dulc, dulc(i)",sweet
+3672,R,"val, vass",servant
+3673,S,al,one who
+3675,S,ionistic,"like, pertaining to, characterized by"
+3677,S,aline,"pertaining to, that which"
+3680,S,eering,"action or process of doing, characteristic of"
+3681,S,eerism,practice of engaging in
+3682,S,euse,female
+3683,S,alist,"like, of, pertaining to the quality of"
+3684,R,conniv(e),"close the eyes, blink"
+3686,R,limb(o),"hem, fringe"
+3687,R,uran,heaven
+3689,S,ium,chemical element or group
+3690,S,let,something worn on
+3695,S,est,quality of
+3697,S,heid,state or condition of being
+3698,R,"copul, coupl","bond, connection"
+3700,R,lit,"action at law, lawsuit"
+3703,S,ous,"characterized by, quality of"
+3706,S,ority,"possessing, nature of, pertaining to, that which"
+3708,R,"consul, consult, counsel","deliberate, consider, reflect"
+3709,S,eled,state of
+3710,R,"chair, chais, hedr","chair, seat, base, side"
+3711,R,"sched, schism, schist, schizo, scind, sciss","cut, split, cleave, tear apart, division of opinion"
+3714,R,aure,"gold, golden"
+3715,S,ole,that which
+3716,S,ange,"that which, result of, act of"
+3717,R,cavil,"jeering, scoffing"
+3718,R,triumph,to have a procession to celebrate a victory
+3720,S,ener,one who
+3725,S,yon,that which
+3726,R,"crust, crout, cryst, cust ","rind, shell, crust, husk, ice, freeze, transparent"
+3727,R,ont(o),beings
+3729,R,"dais, desk, disk","quoit, disk, discus, table"
+3731,R,argo,"swift; white, shining"
+3733,R,mer(e),"pure, unmixed"
+3737,R,prior,"former, previous, in front"
+3740,R,"poei, poem, poet, poetr","make, do, create, creator, poet"
+3741,R,eleg,mournful song
+3742,R,lyr,a lyre
+3743,R,ep,"song, word, poetry"
+3744,R,victim,"victim, sacrifice"
+3747,S,am,that which
+3748,R,"past, pastr, pat","dough, paste"
+3749,S,erie,a place for
+3750,S,iss,pertaining to
+3751,R,equ,"horse, horse hair"
+3752,R,mutu,"in return, done in exchange, borrowed, reciprocal"
+3753,R,glob,"sphere, somewhat spherical mass"
+3754,S,at,"full of, quality of"
+3755,P,out,"out, outside"
+3756,S,itation,"act of, state of, process, result of doing something, that which"
+3757,R,"marg, margin","border, edge"
+3759,R,"coact, quat","force, compress, collect"
+3762,R,pron(e),leaning forward
+3763,R,"niger, nigr, neg",black
+3764,R,turp,"shameful, base"
+3771,R,"con, con(i)",cone
+3773,P,intel,between
+3774,R,"dactyl, dat(e)","finger, toe"
+3776,R,"sacchar, sucr, sug",sugar
+3777,S,etary,of or relating to
+3779,R,orchestr(a),place between the stage and audience where the theatrical chorus danced
+3780,R,angel,messenger
+3781,R,"vaccin, vaccin(e)",of cows
+3786,S,inant,"that which, state of, quality of, condition"
+3790,R,id,same
+3791,P,um,not
+3796,R,"tort, tort(a)","flat cake, round of bread"
+3797,S,illa,small
+3798,R,austr,south
+3799,R,"chiro, prest, geon","hand, at hand, nimble"
+3801,R,"gluc, glyc, lico","sweet, sugar"
+3802,S,ine,halogen
+3803,S,i,(plural)
+3804,R,aden,gland
+3805,R,"alb, aub",white
+3964,R,visc,"mistletoe, birdlime"
+3807,S,le,"repeatedly, continuously"
+3808,R,"velop, velop(e)",wrap up
+3809,S,enary,"relating to, quality of, that which"
+3810,S,ino,"relating to, pertaining to, quality of, that which"
+3811,R,cirr,lock of curly hair
+3812,R,cyan,dark blue
+3813,S,ide,binary chemical compound
+3815,R,cyst,"bladder, pouch, bag"
+3816,P,brachy,short
+3817,R,branchio,gills
+3818,R,"cephal, cephalo",head
+3819,S,bi,"indicating a place, somewhere"
+3820,S,ma,that which
+3821,R,alpha,"beginning, first letter of Greek alphabet"
+3822,S,ered,to be something (past tense)
+3823,S,iative,inclined to
+3824,S,ively,manner of
+3826,P,erythr(o),red
+3827,R,mycin,substance obtained from fungus
+3828,R,enter,intestines
+3830,R,hapl,single fold
+3833,R,"regio, regio(n)","direction, boundary-line, locality"
+3834,S,icat,"to, to make"
+3837,S,ise,"to, to make"
+3841,S,one,"large, big, grand"
+3842,R,medal(li),metal
+3844,S,iary,"of or relating to, quality of"
+3845,P,dino,"terrible, monstrous"
+3846,R,"lamp, lant",to shine
+3847,R,"establ, stabil, stabl","steady, firm"
+3848,R,mei,"less, lessor"
+3849,R,"zym, zymo",leaven
+3850,R,tem,alcoholic drink
+3853,S,e,"female, feminine"
+3854,R,"pol, pon, poul, pool, pul, pusil","young animal, tiny"
+3856,R,"ion, on",a charged particle
+3857,R,silic,"hard stone, flint"
+3858,S,on,a nonmetal
+3859,R,"mint, monet","coin, money, a place where money is made"
+3860,S,eign,state or qualitiy
+3861,S,iny,the act of
+3862,R,"stamen, stamin",thread
+3863,R,angio,blood vessel
+3864,R,viron,"a circle, circuit"
+3865,S,oyant,"characteristic of, relating to"
+3866,R,bast,to build
+3867,S,bund,acting in a certain way
+3868,R,ichthyo,"fish, fish market"
+3870,R,nes,"island, dry land"
+3871,P,nan(o),"dwarf, little old man"
+3872,R,oo,egg
+3873,R,"plan, planet","wander, wanderer"
+3874,R,ornitho,bird
+3875,R,ov,"egg, egg-keeper"
+3877,R,digit,finger
+3879,R,"gym, gymn","naked, unclad"
+3880,S,asium,a place for
+3883,S,iti,small (plural)
+3885,R,mat,morning
+3886,S,inee,"relating to, pertaining to, that which"
+3888,S,urously,the manner of
+3897,R,stetho,chest
+3898,R,mamm,"breast, udder"
+4229,S,mentation,process of
+3899,R,"frain, fren","to check, curb, control, to hold in with a bridle"
+3900,P,indu,"in, within"
+3903,R,acea,heal
+3904,S,ble,fold (a multiplier)
+3905,S,ific,make
+3906,R,stipulat(e),to exact a promise
+3910,S,oid,"a form, shape"
+3911,R,Latin,from the district in which Rome was situated
+3914,R,grom,"thunder, roar"
+3916,S,inate,"being full of, having the quality of"
+3917,S,inately,in the manner of
+4221,R,ventri,"belly, abdomen, stomach, small cavity"
+3928,S,cill,small
+3931,P,par,"through, thoroughly"
+3934,R,thal,valley
+3938,R,deterior,"worse, less desirable"
+3940,S,erant,"having the quality of, characterized by"
+3941,S,erary,of or relating to; that which
+3942,R,lit,"the people, public"
+3943,S,astical,pertaining to
+3945,R,dew,moisture
+3946,S,izen,pertaining to
+3948,S,te,"state, condition or quality, that which"
+3951,S,oning,the act or process of doing (something)
+3952,S,os,that which
+3953,S,sionment,"quality of, state of, result of, product of, act of, that which"
+3954,R,lit,supplication
+3955,S,any,that which
+4196,S,ester,"to, to make"
+3956,S,ior,"state of, that which"
+3957,S,ule,pertaining to
+3959,S,ison,"the act of, that which"
+3961,S,der,"a, that which does something"
+3962,R,ascet,"hermit, monk"
+3963,R,trich,big sparrow
+3965,S,re,that which
+3968,R,titl,"label, description"
+3970,S,lary,of or relating to
+3973,P,up,upward
+3975,S,inary,having the quality of
+3976,R,fuddle,to be confused
+3978,S,ard,to engage in an activity
+3981,S,iatr,healing
+3982,S,toire,that which
+3984,R,test,tile; earthenware pot
+3986,S,ridge,that which
+3987,S,el,to do
+3988,P,"ad, adv","from, away, from off, down, against"
+3989,P,v,"away, from, from off, down"
+3990,S,fied,made; having the quality of
+3992,S,uary,person or thing belonging to; place for
+3994,R,mart,"Roman god of war, war"
+3995,R,olymp,site of the original Olympic games
+3996,R,crastin,"belonging to tomorrow, of the next day"
+4011,S,acist,one who
+4000,R,shrin(e),a case or box for keeping papers
+4001,S,ion,one who
+4004,R,cret,Cretan (from the Isle of Crete)
+4005,R,calyps(e),"to cover, conceal"
+4006,R,odyn,pain
+4007,S,"bond, bund",tending to do or be something
+4008,S,ura,that which
+4009,P,ar,"not, without"
+4010,R,mening,membrane
+4015,S,ion,"to, to make"
+4016,R,cr,to shout out in complaint
+4017,R,cali,shoemaker's last
+4018,R,bank,long seat
+4019,S,ental,quality of
+4020,S,inous,"like, tending to"
+4021,S,ade,quality of
+4022,S,ioner,a person who does an action
+4024,S,mental,that which
+4025,R,dyn,pain
+4026,R,ap,bees
+4027,R,"beef, bo, bov, bu, buco(l), bugl, buffalo, but, butt","ox, cow, bull, cow cheese, butter"
+4028,R,"pisc, poise, prisc",fish
+4029,S,ine,"resembling, quality of"
+4030,R,simi,ape
+4031,R,urs,bear
+4032,S,issus,condition of
+4033,S,eria,that which (plural)
+4034,S,et,that which
+4035,R,"mill, mol, mol(u)",to grind (in a mill)
+4036,R,"prid, proud, prov, prow","to be good, be of use, be helpful"
+4037,R,taur,bull
+4038,R,"aeon, ag, ag(e), eon, etern, ev","age, everlasting, time, life, generation"
+4041,R,"pap, pop",father
+4043,R,guard,"warden, watcher, keeper"
+4044,S,onist,one who
+4045,S,entious,"inclined to, tending to"
+4046,S,omatic,"like, pertaining to, characterized by"
+4047,R,academ,school where Plato taught
+4048,R,"amin, amine, ammon",compound derived from ammonia; from the Egyptian God Ammon
+4049,P,t,the
+4050,R,basil,king
+4051,S,ionally,in the manner of
+4052,R,"cancel, chancel, chancell","gridwork of bars, barrier, lattice"
+4053,R,"canc, cank, carcino","cancer, tumor, malignant disease, sore"
+4055,S,e,"a, that which, act of, state of, one who"
+4056,R,"cais, capsul, cas, cash, cask, cate, sash","container, small box, chest"
+4057,R,"cate, chain","chain, link"
+4058,R,"cod, cow, queue","tail, line"
+4060,P,be,by
+4061,S,ole,"to, to make"
+4063,S,ander,that which
+4064,R,"cort, cortis","bark, rind, shell, husk"
+4065,S,ex,"a, that which"
+4066,S,one,from the
+4069,S,ible,that which
+4068,R,"crass, cruc, greas, greas(e)","thick, stupid, fat"
+4070,S,ard,that which
+4071,S,iority,state of
+4072,R,"coop, cup","barrel, vat, cask, tub, drinking container"
+4074,R,"chlor, chloro","green, light green"
+4075,S,uroy,course fabric
+4076,R,harp(si),harp
+4077,S,ol,flute
+4078,S,a,one who
+4079,S,endum,that which is
+4288,R,chthon,earth
+4081,S,antine,"quality of, state of"
+4082,S,ond,that which
+4083,S,icum,small
+4084,P,sud(d),"under, up to, before"
+4085,S,e,"to, to make"
+4086,S,e,"state of, quality of, worthy of, result of, having"
+4087,R,"eros, erot","love, desire"
+4090,S,ti,that which
+4228,S,edly,manner of
+4091,R,"far, farr","grain, meal, flour"
+4092,S,ago,that which
+4093,S,ay,that which
+4094,R,"febr, fev",fever
+4095,R,"fol, fool","bellows, inflated ball, windbag"
+4096,S,est,that which
+4097,P,d,from
+4098,S,elry,that which brings
+4099,S,eral,pertaining to
+4100,S,erate,one who is
+4101,S,erate,"to, to make"
+4103,S,esis,"pertaining to, one who, that which"
+4104,S,etics,study of
+4105,S,ito,state of
+4106,S,izant,quality of
+4107,S,aiss,action of
+4108,S,oiss,very
+4110,S,"oiter, oitre","to, to do something"
+4115,R,"ver, vern","spring, occuring in spring"
+4117,R,"ger, geronto","old age, old man"
+4119,S,iatrics,"science of, physician of"
+4120,S,al,place where
+4121,S,are,"of, containing"
+4122,R,hen,one
+4123,S,aly,that which
+4124,S,alous,"like, pertaining to, characterized by"
+4125,P,"al, el, il","the, on the, to the"
+4126,S,en,one who
+4127,S,le,"to, to make"
+4128,R,"cen, cene, cent","new, fresh, young"
+4129,R,caco,bad
+4130,R,"carat, carot, carrot, cer, cerat, cerato, ceros, karat ","horn, carrot"
+4131,R,"klept, klepto","to steal, cheat"
+4216,R,quasi,"as if, practically, almost"
+4132,S,erties,those which
+4133,S,ersome,"like, pertaining to, characterized by"
+4134,R,"lac, lag, lak(e)","lake, hole, gap, pond"
+4135,S,endary,pertaining to
+4208,R,"seism, seismo","earthquake, shock"
+4136,S,ster,one who
+4137,S,acal,having
+4138,R,mul,milky
+4139,R,phylact,"watch, guard, sentinel, protection"
+4140,R,lub,"oily, slippery, inconstant"
+4141,R,lup,wolf
+4143,S,o,one who
+4144,S,ialistic,"inclined to, tending to"
+4145,S,iculate,"to, to make, do"
+4146,S,est,"to, to make"
+4147,R,"mill, mol","mill, to grind in a mill, sprinkle grain"
+4148,R,gage,pledge
+4149,S,ities,those which
+4150,S,ication,process of
+4227,S,ely,manner of
+4151,S,erator,that which
+4152,R,mach,"battle, fight"
+4153,R,"math, mathem","learn, something learned, knowledge, science"
+4154,S,atics,"like, pertaining to, characterized by"
+4157,R,"manc, mancy, mantis","seer, prophet, diviner "
+4158,R,mast,breast
+4159,R,"met, mett","ore, mine, metal"
+4160,R,"met, metr, metro","mother, womb"
+4161,S,ion,place of
+4162,R,"nas, rhino",nose
+4163,R,"niche, nick",nest
+4164,R,"nic, nike","victory, conquest"
+4165,S,isade,that which
+4166,S,enate,"to, to make, to do"
+4167,S,enable,able to be
+4168,S,ionately,manner of
+4169,S,ity,tendency
+4170,S,ious,"to, to make"
+4171,R,pip,"chirp, peep"
+4172,S,mentary,of or relating to
+4230,R,hagio,holy holy
+4173,P,preter,"past, by, beyond"
+4174,S,arian,belonging to
+4175,R,pachy,"thick, massive"
+4176,R,"celer, sley",celery
+4178,R,"blam, blas","rebuke, condemn, criticize"
+4179,P,ant,in return
+4180,R,"priest, presby","old man, elder"
+4181,S,b,to be
+4183,R,numin,"divine power, divinity, deity"
+4184,R,fenestr,window
+4185,R,tellur,"land, earth, ground"
+4186,R,"rom, Roma, Roman","Rome, Roman "
+4187,R,rosa,rose
+4188,S,eo,"a, that which, place"
+4189,S,atism,condition of
+4190,R,"rhizo, ric(e)",root root
+4191,P,e,a
+4192,R,squire,"shield, shield bearer"
+4193,R,supin,to lay on one's back
+4194,R,troph,"nourishment, food"
+4195,S,entary,state of
+4197,S,erer,a person who
+4198,R,"ist, sist, st, stab, stag, stai, stat, stic, stanc(h), stem, staunc(h), stet(r)","stand, firm, fixed place"
+4199,S,eer,"to, to make"
+4200,S,ineer,"a person associated with, engaged in"
+4201,S,istics,study of
+4202,S,ionery,those which
+4238,S,idation,quality of
+4203,R,"etud, stud","have zeal for, devote oneself to"
+4205,R,"gamb, jamb","leg, leap, spring, bend"
+4207,P,en,over
+4209,P,for,for
+4210,P,bi,over
+4212,S,er,quality of
+4213,R,"tach, tacho","speed, swift"
+4215,R,"ther, treac",wild beast
+4217,R,"qui, quid, quip, quo, quor","what, which, who, whom"
+4219,R,"vas, vasc, vess","container, bowl, cask, ship"
+4220,S,mently,manner of
+4222,P,pee,away
+4223,S,iable,worthy of
+4224,S,ualize,act of
+4225,R,xylo,wood wood
+4226,R,zon,"belt, girdle"
+4231,S,ities,study of
+4232,S,itor,one who
+4233,S,teel,well
+4234,S,erally,manner of
+4235,S,lesome,state of
+4236,S,ivating,tending to 
+4237,S,erness,quality of
+4242,S,ain,place of
+4241,S,ionate,"full of, quality of, state of"
+4243,S,y,study of
+4244,S,ously,manner of
+4245,R,barb,beard
+4246,R,"box, pyx","boxwood, box"
+4247,R,"cen, ceno, coen","common, shared"
+4248,R,"gout, gutt",drop
+4249,S,itionist,a person who makes
+4250,R,"ferr, ferri, ferro",iron
+4251,R,"grat, grid, grill","lattice, wickerwork, hurdle"
+4253,R,yl,"matter, substance, stuff"
+4254,R,"ma, mes, mon","my, mine"
+4255,R,"onych, onyx, ungul","nail, claw, hoof"
+4277,R,"deino, dino","terrible, monstrous"
+4256,R,stop,oakum
+4257,R,pepper,pepper
+4258,S,oni,that which
+4259,R,"styl, stylo","pillar, column"
+4260,R,purpl,purple
+4261,R,"phyl, phylo","race, tribe, class"
