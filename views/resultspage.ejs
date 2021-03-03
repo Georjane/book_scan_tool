@@ -9,14 +9,17 @@
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>  
 </head>
 <body>
+  <h2>Percentage Match is <%= percentageMatch %>%</h2>
   <div class="table-responsive">
     <table id="table_id" class="display">
       <thead>
       <tr>
         <th>Word not Found in Dictionary</th>
+        <th>Word count</th>
         <th>Highest Matching Word</th>
         <th>% of Match </th>
         <th>Word_id </th>
+        <th>Root_id </th>
         <th>Roots of Matching Word</th>
         <th>Meanings of the Roots of Matching Word</th>  
         <th>Approve/Reject Match</th>      
@@ -32,7 +35,7 @@
           <% } %>
           <td><%= %></td>
           <td><%= %></td>
-          <td><input type="checkbox" name="1" id="1"></td>
+          <td><input type="checkbox" name="1" id="1">Submit Book Review</td>
         </tr>
         <% } %>
       </tbody>

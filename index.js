@@ -13,6 +13,7 @@ const dictionary = [];
 const wordsNotFound = [];
 const arrayOfWordIds = [];
 const wordAndId = {}
+let percentageMatch = 0;
 
 app.set("views",path.join(__dirname,"views")) 
 app.set("view engine","ejs")
@@ -59,8 +60,8 @@ const processPDF = async (res) => {
     allBookWordsObject[word] = {}
     allBookWordsObject[word]['word_count'] = wordsToCount[word]
   }
-	scanBook(wordsArray, res)
-  res.render('resultspage', { data: allBookWordsObject})
+	await scanBook(wordsArray, res)
+  // res.render('resultspage', { data: allBookWordsObject})
 
 }
 
@@ -80,24 +81,19 @@ const scanBook = (words, res) => {
     }
 
     const numberOfWordsFound = containsWord(words, dictionary);
-    const percentageMatch = calculatePercentage(words, numberOfWordsFound)
+    percentageMatch = calculatePercentage(words, numberOfWordsFound)
     console.log('>>>>>>>>>>>>>> Percentage Match is ' + percentageMatch + '%');
     const unfoundWordsWithPartlyMatchedWords = partlyMatchedWords(wordsNotFound, dictionary)
-    // console.log(unfoundWordsWithPartlyMatchedWords);
-// suppose to do this instead for the highest matching words already
     for (const word in allBookWordsObject) {
       for (const unfoundWord in unfoundWordsWithPartlyMatchedWords) {
           if (word == unfoundWord) {
             allUnfoundWordsObject[word] = {}
             allUnfoundWordsObject[word]['word_count'] = allBookWordsObject[word]['word_count']
-            allUnfoundWordsObject[word]['match-words'] = unfoundWordsWithPartlyMatchedWords[word]
+            // allUnfoundWordsObject[word]['match-words'] = unfoundWordsWithPartlyMatchedWords[word]
           }
       }
     }
-    // console.log(allUnfoundWordsObject);
-		let results = wordsWithHighestPercentMatch(unfoundWordsWithPartlyMatchedWords, res)
-		// console.log(results);
-		// res.render('resultspage', { data: results, percent: percentageMatch });
+    wordsWithHighestPercentMatch(unfoundWordsWithPartlyMatchedWords, res)
   });
 }
 
@@ -116,7 +112,6 @@ const containsWord = (words, dictionary) => {
 const calculatePercentage = (words, numberOfWordsFound) => {
   return Math.round((numberOfWordsFound/words.length)*100)
 }
-
 
 const convertPdfToTxt = async (uploadedBookPath) => {
 	let dataBuffer = fs.readFileSync(uploadedBookPath); 
@@ -144,7 +139,6 @@ const partlyMatchedWords = (words, dictionary) => {
     dictionary.map(childWord => {
       let regexChildWord = new RegExp(escapeRegExp(childWord));
       if (regexChildWord.test(parentWord)) {
-				// subhash['word'] = childWord
         subhash[childWord] = wordPercentageMatch(childWord, parentWord)
       }
     });
@@ -167,7 +161,7 @@ const findMaxPercentageMatch = (object) => {
 	return Math.max(...percentValuesArray);
 }
 
-const wordsWithHighestPercentMatch = (unfoundWordsWithPartlyMatchedWords, res) => {
+const wordsWithHighestPercentMatch = async (unfoundWordsWithPartlyMatchedWords, res) => {
 	let filteredUnfoundWords = {}
 	for (const unfoundWord in unfoundWordsWithPartlyMatchedWords) {
 		let subdata = {}
@@ -176,18 +170,92 @@ const wordsWithHighestPercentMatch = (unfoundWordsWithPartlyMatchedWords, res) =
 		subdata['unfound_word'] = unfoundWord;
 		subdata['matched_word'] = maxPercentMatchWord;
 		subdata['percent'] = maxPercentMatchValue + '%';
-	  // // subdata['word_id'] = findWordId(maxPercentMatchWord)
+	  subdata['word_id'] = findWordId(maxPercentMatchWord)
+    // filteredUnfoundWords = subdata
     for (const wordNotFound in allUnfoundWordsObject) {
       if (unfoundWord == wordNotFound) {
         allUnfoundWordsObject[wordNotFound]['highest_match_word'] = maxPercentMatchWord;
         allUnfoundWordsObject[wordNotFound]['percent_match'] = maxPercentMatchValue + '%';
+        allUnfoundWordsObject[wordNotFound]['word_id'] = findWordId(maxPercentMatchWord);
       }
     }
   }
   // console.log(filteredUnfoundWords);
-    console.log(allUnfoundWordsObject);
+    // console.log(allUnfoundWordsObject);
 
-  // findRootId(filteredUnfoundWords, res)
+  findRootId(filteredUnfoundWords, res)
+
+}
+
+const findWordId = (maxPercentMatchWord) => {
+	for (const word in wordAndId) {
+		if (maxPercentMatchWord == wordAndId[word]['word']) {
+			return wordAndId[word]['word_id']
+		}
+	}
+}
+
+const findRootId = (filteredUnfoundWords, res) => {
+  let rootAndWordIdsObj = {};
+  fs.createReadStream('word_roots_map.csv')
+    .pipe(csv())
+    .on('data', function (row) {
+      rootAndWordIdsObj[row.word_id] = row.root_id
+    })
+    .on('end',async function () {
+      let unfoundWordIdsArray = []
+      let allWordIdsArray = []
+      Object.values(allUnfoundWordsObject).map(element => {
+        unfoundWordIdsArray.push(element['word_id'])
+      });
+      // unfoundWordIdsArray contains all unfound words ids
+      allWordIdsArray = Object.keys(rootAndWordIdsObj)
+      function filterWordIds(word_id,) {
+        return unfoundWordIdsArray.includes(word_id);
+      }
+      let filteredUnfoundWordIds = allWordIdsArray.filter(filterWordIds);
+      // filteredUnfoundWordIds Array contains only unfound words ids that have corresponding root_ids
+      let filteredUnfoundWordAndRootIds = {}
+      filteredUnfoundWordIds.map(word_id => {
+        filteredUnfoundWordAndRootIds[word_id] = rootAndWordIdsObj[word_id]
+      });
+      // console.log(filteredUnfoundWordAndRootIds);
+      // console.log(allUnfoundWordsObject);
+
+      for (const word_id in filteredUnfoundWordAndRootIds) { 
+        for (const wordNotFound in allUnfoundWordsObject) {
+          if (word_id == allUnfoundWordsObject[wordNotFound]['word_id']) {
+            allUnfoundWordsObject[wordNotFound]['root_id'] = filteredUnfoundWordAndRootIds[word_id]
+          }
+        }  
+      }
+      // console.log(allUnfoundWordsObject);
+      findMeaningAndDescription(res)
+      
+    });
+}
+
+const findMeaningAndDescription = async (res, req) => {
+
+	let objOfMeaningsOriginsDescs = {} // object containing word_id, root_id, meaning and description
+	let rootIdMeaningDescObj = {}
+
+	fs.createReadStream('roots.csv')
+			.pipe(csv())
+			.on('data', function (row) {
+        for (const wordNotFound in allUnfoundWordsObject) {        
+          if (row.root_id == allUnfoundWordsObject[wordNotFound]['root_id']) {
+            // arrRootIdMeaningDesc.push(row.root_id, row.description, row.Meaning)
+            allUnfoundWordsObject[wordNotFound]['description'] = row.description
+            allUnfoundWordsObject[wordNotFound]['meaning'] = row.Meaning
+          }  
+        }
+			})
+			.on('end', async function () {
+        // console.log(allUnfoundWordsObject);
+				res.render('resultspage', { data: allUnfoundWordsObject, percentageMatch: percentageMatch});
+
+			});  
 }
 
 function getKeyByValue(object, value) {
