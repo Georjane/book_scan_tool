@@ -252,7 +252,13 @@ const findMeaningAndDescription = async (res, req) => {
         }
 			})
 			.on('end', async function () {
-        // console.log(allUnfoundWordsObject);
+        console.log(allUnfoundWordsObject);
+        
+        for (const unfoundword in allUnfoundWordsObject) {
+          delete allUnfoundWordsObject[unfoundword]["word_id"];
+          delete allUnfoundWordsObject[unfoundword]["root_id"];
+        }
+        console.log(allUnfoundWordsObject);
 				res.render('resultspage', { data: allUnfoundWordsObject, percentageMatch: percentageMatch});
 
 			});  
