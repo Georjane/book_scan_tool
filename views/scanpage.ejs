@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>WordRadar</title>
+</head>
+  <body>
+    <div class="jumbotron">
+      <% let url = 'http://localhost:8080/scans/' + scanid %>
+      <h1>The book scan is in progress and the review suggestions are being generated. Please visit this <a href=<%= url%>>link</a> to check the status</h1> <br>  
+    </div>
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          background-image: radial-gradient(#0f26488c,#0f2648), url('image1.jpg');
+          background-position: 55% 100%;
+          height: 100vh;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover
+        }
+
+        .jumbotron {
+          position: relative;
+          top: 100px;
+          height: 50vh;
+          width: 70vw;
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background-color: rgba(54, 66, 136, 0);
+          color: white;
+        }
+
+        #button {
+          box-shadow: 0px 0px 10px #0d1be0;
+          border-radius: 0 10px;
+          width: fit-content;
+          padding: 0 8px;
+          margin-top: 20px;
+          height: 40px;
+          border: 2px solid;
+          background: linear-gradient(150deg, #72a7e2 0%, #563ce9 80%);
+        }
+
+        #button:hover {
+          background: linear-gradient(150deg, #adcff5 0%, #9685f5 80%);
+        }
+        
+        
+       </style>
+  </body>
+</html>
