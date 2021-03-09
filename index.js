@@ -1,249 +1,243 @@
-const express = require('express')
-const path = require("path") 
-const multer = require('multer')
+const express = require('express');
+const path = require('path');
+const multer = require('multer');
 const fs = require('fs');
 const pdf = require('pdf-parse');
 const csv = require('csv-parser');
 
 
 const app = express();
-const allBookWordsObject = {}
-const allUnfoundWordsObject = {}
+const allBookWordsObject = {};
+const allUnfoundWordsObject = {};
 const dictionary = [];
 const wordsNotFound = [];
 const arrayOfWordIds = [];
-const wordAndId = {}
+const wordAndId = {};
 let percentageMatch = 0;
 
-app.set("views",path.join(__dirname,"views")) 
-app.set("view engine","ejs")
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
-var storage = multer.diskStorage({ 
-	destination: function (req, file, cb) {  
-		cb(null, "uploads") 
-	}, 
-	filename: function (req, file, cb) { 
-		cb(null, file.fieldname +".pdf") 
-	} 
-})  
+const storage = multer.diskStorage({
+  destination(req, file, cb) {
+    cb(null, 'uploads');
+  },
+  filename(req, file, cb) {
+    cb(null, `${file.fieldname}.pdf`);
+  },
+});
 
-var upload = multer({ 
-	storage: storage, 
-	fileFilter: function (req, file, cb){
-		var filetypes = /pdf/; 
-		var mimetype = filetypes.test(file.mimetype);
-		var extname = filetypes.test(path.extname(file.originalname).toLowerCase()); 		
-		if (mimetype && extname) { 
-			return cb(null, true); 
-		} 	
-		cb("Error: File upload only supports the "
-				+ "following filetypes - " + filetypes); 
-	}
-}).single("mybook");
+const upload = multer({
+  storage,
+  fileFilter(req, file, cb) {
+    const filetypes = /pdf/;
+    const mimetype = filetypes.test(file.mimetype);
+    const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
+    if (mimetype && extname) {
+      return cb(null, true);
+    }
+    cb(`${'Error: File upload only supports the '
+				+ 'following filetypes - '}${filetypes}`);
+  },
+}).single('mybook');
 
-app.post("/processpdfbook", async (req, res, next) => {
-	upload(req,res,function(err) {
-		if(err) { 
-			res.send(err);
-		} else {
-			// return scan id in progress while waiting for processPDF to complete
-			processPDF(res);
-		}
-	});
-}) 
+app.post('/processpdfbook', async (req, res, next) => {
+  upload(req, res, (err) => {
+    if (err) {
+      res.send(err);
+    } else {
+      // return scan id in progress while waiting for processPDF to complete
+      processPDF(res);
+    }
+  });
+});
 
 const processPDF = async (res) => {
-	let words = await convertPdfToTxt('uploads/mybook.pdf');
-	let wordsToCount = await groupWordsBycount(words);
-	const wordsArray = Object.keys(wordsToCount)
+  const words = await convertPdfToTxt('uploads/mybook.pdf');
+  const wordsToCount = await groupWordsBycount(words);
+  const wordsArray = Object.keys(wordsToCount);
   for (const word in wordsToCount) {
-    allBookWordsObject[word] = {}
-    allBookWordsObject[word]['word_count'] = wordsToCount[word]
+    allBookWordsObject[word] = {};
+    allBookWordsObject[word].word_count = wordsToCount[word];
   }
-	scanBook(wordsArray, res)
-}
+  scanBook(wordsArray, res);
+};
 
 const scanBook = (words, res) => {
-	fs.createReadStream('words.csv')
-  .pipe(csv())
-  .on('data', function (row) {
-    let eachWord = {};
-    eachWord['word'] = row.word;
-    eachWord['word_id'] = row.word_id;
-    wordAndId[row.word] = eachWord
-  })
-  .on('end', function () {
-		for (const word in wordAndId) {
-      dictionary.push(wordAndId[word]['word'])
-      arrayOfWordIds.push(wordAndId[word]['word_id'])
-    }
-    const numberOfWordsFound = containsWord(words, dictionary);
-    percentageMatch = calculatePercentage(words, numberOfWordsFound)
-    const unfoundWordsWithPartlyMatchedWords = partlyMatchedWords(wordsNotFound, dictionary)
-    for (const word in allBookWordsObject) {
-      for (const unfoundWord in unfoundWordsWithPartlyMatchedWords) {
+  fs.createReadStream('words.csv')
+    .pipe(csv())
+    .on('data', (row) => {
+      const eachWord = {};
+      eachWord.word = row.word;
+      eachWord.word_id = row.word_id;
+      wordAndId[row.word] = eachWord;
+    })
+    .on('end', () => {
+      for (const word in wordAndId) {
+        dictionary.push(wordAndId[word].word);
+        arrayOfWordIds.push(wordAndId[word].word_id);
+      }
+      const numberOfWordsFound = containsWord(words, dictionary);
+      percentageMatch = calculatePercentage(words, numberOfWordsFound);
+      const unfoundWordsWithPartlyMatchedWords = partlyMatchedWords(wordsNotFound, dictionary);
+      for (const word in allBookWordsObject) {
+        for (const unfoundWord in unfoundWordsWithPartlyMatchedWords) {
           if (word == unfoundWord) {
-            allUnfoundWordsObject[word] = {}
-            allUnfoundWordsObject[word]['word_count'] = allBookWordsObject[word]['word_count']
+            allUnfoundWordsObject[word] = {};
+            allUnfoundWordsObject[word].word_count = allBookWordsObject[word].word_count;
             // allUnfoundWordsObject[word]['match-words'] = unfoundWordsWithPartlyMatchedWords[word]
           }
+        }
       }
-    }
-    wordsWithHighestPercentMatch(unfoundWordsWithPartlyMatchedWords, res)
-  });
-}
+      wordsWithHighestPercentMatch(unfoundWordsWithPartlyMatchedWords, res);
+    });
+};
 
 const containsWord = (words, dictionary) => {
   let numberOfWordsFound = 0;
   words.map(word => {
     if (dictionary.includes(word)) {
-      numberOfWordsFound += 1
+      numberOfWordsFound += 1;
     } else {
-      wordsNotFound.push(word)
+      wordsNotFound.push(word);
     }
   });
-  return numberOfWordsFound
-}
+  return numberOfWordsFound;
+};
 
-const calculatePercentage = (words, numberOfWordsFound) => {
-  return Math.round((numberOfWordsFound/words.length)*100)
-}
+const calculatePercentage = (words, numberOfWordsFound) => Math.round((numberOfWordsFound / words.length) * 100);
 
 const convertPdfToTxt = async (uploadedBookPath) => {
-	let dataBuffer = fs.readFileSync(uploadedBookPath); 
-	let words = [];
-	await pdf(dataBuffer).then( (data) => {
-		words = data.text.replace(/[^a-zA-Z ]/g, "").split(' ');
-	});
-	return words;
+  const dataBuffer = fs.readFileSync(uploadedBookPath);
+  let words = [];
+  await pdf(dataBuffer).then((data) => {
+    words = data.text.replace(/[^a-zA-Z ]/g, '').split(' ');
+  });
+  return words;
 };
 
 const groupWordsBycount = async (words) => {
-	let wordsToCount = {};
-	for(let i = 0; i < words.length; i=i+1) {
-		if(wordsToCount[(words[i]).toLowerCase()] == undefined) 
-		wordsToCount[(words[i]).toLowerCase()] = 0;
-		wordsToCount[(words[i]).toLowerCase()]++;
-	}  
-	return wordsToCount;
+  const wordsToCount = {};
+  for (let i = 0; i < words.length; i += 1) {
+    if (wordsToCount[(words[i]).toLowerCase()] == undefined) { wordsToCount[(words[i]).toLowerCase()] = 0; }
+    wordsToCount[(words[i]).toLowerCase()]++;
+  }
+  return wordsToCount;
 };
 
 const partlyMatchedWords = (words, dictionary) => {
-  let unfoundWordsWithPartlyMatchedWords = {};
+  const unfoundWordsWithPartlyMatchedWords = {};
   words.map(parentWord => {
-  let subhash = {}
+    const subhash = {};
     dictionary.map(childWord => {
-      let regexChildWord = new RegExp(escapeRegExp(childWord));
+      const regexChildWord = new RegExp(escapeRegExp(childWord));
       if (regexChildWord.test(parentWord)) {
-        subhash[childWord] = wordPercentageMatch(childWord, parentWord)
+        subhash[childWord] = wordPercentageMatch(childWord, parentWord);
       }
     });
-    unfoundWordsWithPartlyMatchedWords[parentWord] = subhash
+    unfoundWordsWithPartlyMatchedWords[parentWord] = subhash;
   });
-	return unfoundWordsWithPartlyMatchedWords
-}
+  return unfoundWordsWithPartlyMatchedWords;
+};
 
-const wordPercentageMatch = (childWord, parentWord) => {
-  return (Math.round((childWord.length/parentWord.length)*100))
-}
+const wordPercentageMatch = (childWord, parentWord) => (Math.round((childWord.length / parentWord.length) * 100));
 
 function escapeRegExp(str) {
-  return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+  return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&');
 }
 
 const findMaxPercentageMatch = (object) => {
-	let percentValuesArray = Object.values(object);
-	return Math.max(...percentValuesArray);
-}
+  const percentValuesArray = Object.values(object);
+  return Math.max(...percentValuesArray);
+};
 
 const wordsWithHighestPercentMatch = async (unfoundWordsWithPartlyMatchedWords, res) => {
-	for (const unfoundWord in unfoundWordsWithPartlyMatchedWords) {
-		let maxPercentMatchValue = findMaxPercentageMatch(unfoundWordsWithPartlyMatchedWords[unfoundWord])
-		let maxPercentMatchWord = getKeyByValue(unfoundWordsWithPartlyMatchedWords[unfoundWord], maxPercentMatchValue)
+  for (const unfoundWord in unfoundWordsWithPartlyMatchedWords) {
+    const maxPercentMatchValue = findMaxPercentageMatch(unfoundWordsWithPartlyMatchedWords[unfoundWord]);
+    const maxPercentMatchWord = getKeyByValue(unfoundWordsWithPartlyMatchedWords[unfoundWord], maxPercentMatchValue);
     for (const wordNotFound in allUnfoundWordsObject) {
       if (unfoundWord == wordNotFound) {
-        allUnfoundWordsObject[wordNotFound]['highest_match_word'] = maxPercentMatchWord;
-        allUnfoundWordsObject[wordNotFound]['percent_match'] = maxPercentMatchValue + '%';
-        allUnfoundWordsObject[wordNotFound]['word_id'] = findWordId(maxPercentMatchWord);
+        allUnfoundWordsObject[wordNotFound].highest_match_word = maxPercentMatchWord;
+        allUnfoundWordsObject[wordNotFound].percent_match = `${maxPercentMatchValue}%`;
+        allUnfoundWordsObject[wordNotFound].word_id = findWordId(maxPercentMatchWord);
       }
     }
   }
-  findRootId(res)
-
-}
+  findRootId(res);
+};
 
 const findWordId = (maxPercentMatchWord) => {
-	for (const word in wordAndId) {
-		if (maxPercentMatchWord == wordAndId[word]['word']) {
-			return wordAndId[word]['word_id']
-		}
-	}
-}
+  for (const word in wordAndId) {
+    if (maxPercentMatchWord == wordAndId[word].word) {
+      return wordAndId[word].word_id;
+    }
+  }
+};
 
 const findRootId = (res) => {
-  let rootAndWordIdsObj = {};
+  const rootAndWordIdsObj = {};
   fs.createReadStream('word_roots_map.csv')
     .pipe(csv())
-    .on('data', function (row) {
-      rootAndWordIdsObj[row.word_id] = row.root_id
+    .on('data', (row) => {
+      rootAndWordIdsObj[row.word_id] = row.root_id;
     })
-    .on('end',async function () {
-      let unfoundWordIdsArray = []
-      let allWordIdsArray = []
+    .on('end', async () => {
+      const unfoundWordIdsArray = [];
+      let allWordIdsArray = [];
       Object.values(allUnfoundWordsObject).map(element => {
-        unfoundWordIdsArray.push(element['word_id'])
+        unfoundWordIdsArray.push(element.word_id);
       });
       // unfoundWordIdsArray contains all unfound words ids
-      allWordIdsArray = Object.keys(rootAndWordIdsObj)
-      function filterWordIds(word_id,) {
+      allWordIdsArray = Object.keys(rootAndWordIdsObj);
+      function filterWordIds(word_id) {
         return unfoundWordIdsArray.includes(word_id);
       }
-      let filteredUnfoundWordIds = allWordIdsArray.filter(filterWordIds);
+      const filteredUnfoundWordIds = allWordIdsArray.filter(filterWordIds);
       // filteredUnfoundWordIds Array contains only unfound words ids that have corresponding root_ids
-      let filteredUnfoundWordAndRootIds = {}
+      const filteredUnfoundWordAndRootIds = {};
       filteredUnfoundWordIds.map(word_id => {
-        filteredUnfoundWordAndRootIds[word_id] = rootAndWordIdsObj[word_id]
+        filteredUnfoundWordAndRootIds[word_id] = rootAndWordIdsObj[word_id];
       });
-      for (const word_id in filteredUnfoundWordAndRootIds) { 
+      for (const word_id in filteredUnfoundWordAndRootIds) {
         for (const wordNotFound in allUnfoundWordsObject) {
-          if (word_id == allUnfoundWordsObject[wordNotFound]['word_id']) {
-            allUnfoundWordsObject[wordNotFound]['root_id'] = filteredUnfoundWordAndRootIds[word_id]
+          if (word_id == allUnfoundWordsObject[wordNotFound].word_id) {
+            allUnfoundWordsObject[wordNotFound].root_id = filteredUnfoundWordAndRootIds[word_id];
           }
-        }  
+        }
       }
-      findMeaningAndDescription(res)      
+      findMeaningAndDescription(res);
     });
-}
+};
 
 const findMeaningAndDescription = async (res, req) => {
-	fs.createReadStream('roots.csv')
-			.pipe(csv())
-			.on('data', function (row) {
-        for (const wordNotFound in allUnfoundWordsObject) {        
-          if (row.root_id == allUnfoundWordsObject[wordNotFound]['root_id']) {
-            allUnfoundWordsObject[wordNotFound]['description'] = row.description
-            allUnfoundWordsObject[wordNotFound]['meaning'] = row.Meaning
-          }  
+  fs.createReadStream('roots.csv')
+    .pipe(csv())
+    .on('data', (row) => {
+      for (const wordNotFound in allUnfoundWordsObject) {
+        if (row.root_id == allUnfoundWordsObject[wordNotFound].root_id) {
+          allUnfoundWordsObject[wordNotFound].description = row.description;
+          allUnfoundWordsObject[wordNotFound].meaning = row.Meaning;
         }
-			})
-			.on('end', async function () {        
-        for (const unfoundword in allUnfoundWordsObject) {
-          delete allUnfoundWordsObject[unfoundword]["word_id"];
-          delete allUnfoundWordsObject[unfoundword]["root_id"];
-        }
-				res.render('resultspage', { data: allUnfoundWordsObject, percentageMatch: percentageMatch});
-			});  
-}
+      }
+    })
+    .on('end', async () => {
+      for (const unfoundword in allUnfoundWordsObject) {
+        delete allUnfoundWordsObject[unfoundword].word_id;
+        delete allUnfoundWordsObject[unfoundword].root_id;
+      }
+      res.render('resultspage', { data: allUnfoundWordsObject, percentageMatch });
+    });
+};
 
 function getKeyByValue(object, value) {
   return Object.keys(object).find(key => object[key] === value);
 }
 
-app.get("/",function(req,res){ 
-  res.render("homepage"); 
-})
+app.get('/', (req, res) => {
+  res.render('homepage');
+});
 
-app.listen(8080,function(error) { 
-	if(error) throw error 
-		console.log("Server created Successfully on PORT 8080") 
+app.listen(8080, (error) => {
+  if (error) throw error;
+  console.log('Server created Successfully on PORT 8080');
 });
