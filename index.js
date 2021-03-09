@@ -5,7 +5,10 @@ const fs = require('fs');
 const pdf = require('pdf-parse');
 const csv = require('csv-parser');
 const bodyParser = require('body-parser');
-
+const Worker = require('web-worker');
+ 
+const worker = new Worker('data:,postMessage("hello")');
+worker.onmessage = e => console.log(e.data);
 
 const app = express();
 const allBookWordsObject = {};
