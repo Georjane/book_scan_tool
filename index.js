@@ -7,8 +7,21 @@ const csv = require('csv-parser');
 const bodyParser = require('body-parser');
 const Worker = require('web-worker');
  
-const worker = new Worker('data:,postMessage("hello")');
-worker.onmessage = e => console.log(e.data);
+// if (window.Worker) {
+	const myWorker = new Worker("worker.js");
+  // myWorker.postMessage('uploads/mybook.pdf')
+
+  myWorker.onmessage = function(e) {
+    const result = e.data;
+    console.log('Message received from worker');
+    console.log(result);
+  }
+// } else {
+// 	console.log('Your browser doesn\'t support web workers.')
+// }
+
+
+
 
 const app = express();
 const allBookWordsObject = {};
@@ -222,6 +235,8 @@ const wordsWithHighestPercentMatch = async (unfoundWordsWithPartlyMatchedWords, 
 
 const processPDF = async (res) => {
   const words = await convertPdfToTxt('uploads/mybook.pdf');
+  myWorker.postMessage(words)
+  
   const wordsToCount = await groupWordsBycount(words);
   const wordsArray = Object.keys(wordsToCount);
   for (const word in wordsToCount) {
