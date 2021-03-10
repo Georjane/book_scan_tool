@@ -62,49 +62,49 @@ const upload = multer({
   },
 }).single('mybook');
 
-const scanBook = (words, res) => {
-  fs.createReadStream('words.csv')
-    .pipe(csv())
-    .on('data', (row) => {
-      const eachWord = {};
-      eachWord.word = row.word;
-      eachWord.word_id = row.word_id;
-      wordAndId[row.word] = eachWord;
-    })
-    .on('end', () => {
-      for (const word in wordAndId) {
-        dictionary.push(wordAndId[word].word);
-        arrayOfWordIds.push(wordAndId[word].word_id);
-      }
-      const numberOfWordsFound = containsWord(words, dictionary);
-      percentageMatch = calculatePercentage(words, numberOfWordsFound);
-      const unfoundWordsWithPartlyMatchedWords = partlyMatchedWords(wordsNotFound, dictionary);
-      for (const word in allBookWordsObject) {
-        for (const unfoundWord in unfoundWordsWithPartlyMatchedWords) {
-          if (word === unfoundWord) {
-            allUnfoundWordsObject[word] = {};
-            allUnfoundWordsObject[word].word_count = allBookWordsObject[word].word_count;
-            // allUnfoundWordsObject[word]['match-words'] = unfoundWordsWithPartlyMatchedWords[word]
-          }
-        }
-      }
-      wordsWithHighestPercentMatch(unfoundWordsWithPartlyMatchedWords, res);
-    });
-};
+// const scanBook = (words, res) => {
+//   fs.createReadStream('words.csv')
+//     .pipe(csv())
+//     .on('data', (row) => {
+//       const eachWord = {};
+//       eachWord.word = row.word;
+//       eachWord.word_id = row.word_id;
+//       wordAndId[row.word] = eachWord;
+//     })
+//     .on('end', () => {
+//       for (const word in wordAndId) {
+//         dictionary.push(wordAndId[word].word);
+//         arrayOfWordIds.push(wordAndId[word].word_id);
+//       }
+//       const numberOfWordsFound = containsWord(words, dictionary);
+//       percentageMatch = calculatePercentage(words, numberOfWordsFound);
+//       const unfoundWordsWithPartlyMatchedWords = partlyMatchedWords(wordsNotFound, dictionary);
+//       for (const word in allBookWordsObject) {
+//         for (const unfoundWord in unfoundWordsWithPartlyMatchedWords) {
+//           if (word === unfoundWord) {
+//             allUnfoundWordsObject[word] = {};
+//             allUnfoundWordsObject[word].word_count = allBookWordsObject[word].word_count;
+//             // allUnfoundWordsObject[word]['match-words'] = unfoundWordsWithPartlyMatchedWords[word]
+//           }
+//         }
+//       }
+//       wordsWithHighestPercentMatch(unfoundWordsWithPartlyMatchedWords, res);
+//     });
+// };
 
-const containsWord = (words, dictionary) => {
-  let numberOfWordsFound = 0;
-  words.map(word => {
-    if (dictionary.includes(word)) {
-      numberOfWordsFound += 1;
-    } else {
-      wordsNotFound.push(word);
-    }
-  });
-  return numberOfWordsFound;
-};
+// const containsWord = (words, dictionary) => {
+//   let numberOfWordsFound = 0;
+//   words.map(word => {
+//     if (dictionary.includes(word)) {
+//       numberOfWordsFound += 1;
+//     } else {
+//       wordsNotFound.push(word);
+//     }
+//   });
+//   return numberOfWordsFound;
+// };
 
-const calculatePercentage = (words, numberOfWordsFound) => Math.round((numberOfWordsFound / words.length) * 100);
+// const calculatePercentage = (words, numberOfWordsFound) => Math.round((numberOfWordsFound / words.length) * 100);
 
 const convertPdfToTxt = async (uploadedBookPath) => {
   const dataBuffer = fs.readFileSync(uploadedBookPath);
@@ -148,30 +148,30 @@ function getKeyByValue(object, value) {
   return Object.keys(object).find(key => object[key] === value);
 }
 
-const groupWordsBycount = async (words) => {
-  const wordsToCount = {};
-  for (let i = 0; i < words.length; i += 1) {
-    if (wordsToCount[(words[i]).toLowerCase()] === undefined) { wordsToCount[(words[i]).toLowerCase()] = 0; }
-    wordsToCount[(words[i]).toLowerCase()] += 1;
-  }
-  return wordsToCount;
-};
+// const groupWordsBycount = async (words) => {
+//   const wordsToCount = {};
+//   for (let i = 0; i < words.length; i += 1) {
+//     if (wordsToCount[(words[i]).toLowerCase()] === undefined) { wordsToCount[(words[i]).toLowerCase()] = 0; }
+//     wordsToCount[(words[i]).toLowerCase()] += 1;
+//   }
+//   return wordsToCount;
+// };
 
-const partlyMatchedWords = (words, dictionary) => {
-  const unfoundWordsWithPartlyMatchedWords = {};
-  words.map(parentWord => {
-    const subhash = {};
-    dictionary.map(childWord => {
-      const regexChildWord = new RegExp(escapeRegExp(childWord));
-      if (regexChildWord.test(parentWord)) {
-        subhash[childWord] = wordPercentageMatch(childWord, parentWord);
-      }
-      subhash
-    });
-    unfoundWordsWithPartlyMatchedWords[parentWord] = subhash;
-  });
-  return unfoundWordsWithPartlyMatchedWords;
-};
+// const partlyMatchedWords = (words, dictionary) => {
+//   const unfoundWordsWithPartlyMatchedWords = {};
+//   words.map(parentWord => {
+//     const subhash = {};
+//     dictionary.map(childWord => {
+//       const regexChildWord = new RegExp(escapeRegExp(childWord));
+//       if (regexChildWord.test(parentWord)) {
+//         subhash[childWord] = wordPercentageMatch(childWord, parentWord);
+//       }
+//       subhash
+//     });
+//     unfoundWordsWithPartlyMatchedWords[parentWord] = subhash;
+//   });
+//   return unfoundWordsWithPartlyMatchedWords;
+// };
 
 const wordPercentageMatch = (word, parent) => (Math.round((word.length / parent.length) * 100));
 
@@ -237,13 +237,13 @@ const processPDF = async (res) => {
   const words = await convertPdfToTxt('uploads/mybook.pdf');
   myWorker.postMessage(words)
   
-  const wordsToCount = await groupWordsBycount(words);
-  const wordsArray = Object.keys(wordsToCount);
-  for (const word in wordsToCount) {
-    allBookWordsObject[word] = {};
-    allBookWordsObject[word].word_count = wordsToCount[word];
-  }
-  scanBook(wordsArray, res);
+  // const wordsToCount = await groupWordsBycount(words);
+  // const wordsArray = Object.keys(wordsToCount);
+  // for (const word in wordsToCount) {
+  //   allBookWordsObject[word] = {};
+  //   allBookWordsObject[word].word_count = wordsToCount[word];
+  // }
+  // scanBook(wordsArray, res);
 };
 
 app.post('/processpdfbook', async (req, res) => {
