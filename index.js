@@ -5,12 +5,14 @@ const multer = require('multer');
 // const pdf = require('pdf-parse');
 const bodyParser = require('body-parser');
 // const Worker = require('web-worker');
+const { v4: uuidv4 } = require('uuid');
+
 
 // const myWorker = new Worker("worker.js");
 const app = express();
 // let allUnfoundWordsObject = {};
 // let percentageMatch;
-let scanid;
+let scanid = uuidv4();
 
 app.use(express.static(`${__dirname}/public`));
 app.set('views', path.join(__dirname, 'views'));
@@ -23,7 +25,7 @@ const storage = multer.diskStorage({
     cb(null, 'uploads');
   },
   filename(req, file, cb) {
-    cb(null, `${file.fieldname}.pdf`);
+    cb(null, scanid);
   },
 });
 
@@ -46,7 +48,7 @@ app.post('/processpdfbook', async (req, res) => {
     if (err) {
       res.send(err);
     } else {
-      scanid = Math.floor(Math.random() * 100);
+      let scanid = req.file.filename
       res.render('scanpage', { scanid });
     }
   });
