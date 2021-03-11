@@ -63,6 +63,17 @@ app.post('/processpdfbook', async (req, res) => {
   });
 });
 
+const groupWordsBycount = (words) => {
+  const wordsToCount = {};
+  for (let i = 0; i < words.length; i += 1) {
+    if (wordsToCount[(words[i]).toLowerCase()] === undefined) { wordsToCount[(words[i]).toLowerCase()] = 0; }
+    wordsToCount[(words[i]).toLowerCase()] += 1;
+  }
+  return wordsToCount;
+};
+
+let jane = ['one', 'two', 'three', 'one', 'two', 'two']
+
 app.get('/scans/', (req, res) => {
   res.render('status', { scanid });
 
@@ -73,18 +84,36 @@ app.get('/scans/', (req, res) => {
     //       throw err;
     //   }
     // });
-    fs.readFile(`scans/${scanid}.json`, 'utf-8', (err, data) => {
-      if (err) {
-        throw err;
-      }
-      const datascan = JSON.parse(data.toString());
-      res.render('scans', {
-        scanid,
-        status: datascan.status,
-        bookname: datascan.book_name,
-        timestamp: datascan.upload_timestamp,
-      });
+
+    
+    var promise = new Promise(function(resolve, reject) {
+      
+     resolve(groupWordsBycount(jane))
+     reject('no')
     });
+    
+    promise.then((value) => {
+      console.log(value) // "Stuff worked!"
+      fs.writeFile('scans/' + scanid + '.json', JSON.stringify(value), (err) => {
+        if (err) {
+            throw err;
+        }
+      });
+      fs.readFile(`scans/${scanid}.json`, 'utf-8', (err, value) => {
+        if (err) {
+          throw err;
+        }
+        const datascan = JSON.parse(value.toString());
+        res.send(datascan)
+        // res.render('scans', {
+        //   scanid,
+        //   status: datascan.status,
+        //   bookname: datascan.book_name,
+        //   timestamp: datascan.upload_timestamp,
+        // });
+      });
+    })
+    
   });
 });
 
