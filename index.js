@@ -1,18 +1,17 @@
 const express = require('express');
 const path = require('path');
 const multer = require('multer');
-// const fs = require('fs');
+const fs = require('fs');
 // const pdf = require('pdf-parse');
 const bodyParser = require('body-parser');
 // const Worker = require('web-worker');
 const { v4: uuidv4 } = require('uuid');
 
-
+let scanid;
 // const myWorker = new Worker("worker.js");
 const app = express();
 // let allUnfoundWordsObject = {};
 // let percentageMatch;
-let scanid = uuidv4();
 
 app.use(express.static(`${__dirname}/public`));
 app.set('views', path.join(__dirname, 'views'));
@@ -25,7 +24,7 @@ const storage = multer.diskStorage({
     cb(null, 'uploads');
   },
   filename(req, file, cb) {
-    cb(null, scanid);
+    cb(null, uuidv4());
   },
 });
 
@@ -48,9 +47,44 @@ app.post('/processpdfbook', async (req, res) => {
     if (err) {
       res.send(err);
     } else {
-      let scanid = req.file.filename
+      scanid = req.file.filename;
+      const scanData = {
+        status: 'not_started',
+        upload_timestamp: Date.now(),
+        book_name: req.file.originalname,
+      };
+      fs.writeFile(`scans/${scanid}.json`, JSON.stringify(scanData), (err) => {
+        if (err) {
+          throw err;
+        }
+      });
       res.render('scanpage', { scanid });
     }
+  });
+});
+
+app.get('/scans/', (req, res) => {
+  res.render('status', { scanid });
+
+  app.get(`/scans/${scanid}`, (req, res) => {
+    // hello = {'hello': 'hello' }
+    // fs.writeFile('scans/' + scanid + '.json', JSON.stringify(hello), (err) => {
+    //   if (err) {
+    //       throw err;
+    //   }
+    // });
+    fs.readFile(`scans/${scanid}.json`, 'utf-8', (err, data) => {
+      if (err) {
+        throw err;
+      }
+      const datascan = JSON.parse(data.toString());
+      res.render('scans', {
+        scanid,
+        status: datascan.status,
+        bookname: datascan.book_name,
+        timestamp: datascan.upload_timestamp,
+      });
+    });
   });
 });
 

@@ -6,9 +6,13 @@
 </head>
   <body>
     <div class="jumbotron">
-      <% let url = 'http://localhost:8080/scans/' + scanid %>
+      <% let url = 'http://localhost:8080/scans/' %>
+      <!-- <h1>The book scan is in progress and the review suggestions are being generated. Please check the status below</h1> <br>   -->
       <h1>The book scan is in progress and the review suggestions are being generated. Please visit this <a href=<%= url%>>link</a> to check the status</h1> <br>  
+
+      
     </div>
+
     <style>
       * {
           margin: 0;
@@ -54,6 +58,10 @@
 
         #button:hover {
           background: linear-gradient(150deg, #adcff5 0%, #9685f5 80%);
+        }
+
+        .scans {
+          display: block;
         }
         
         
