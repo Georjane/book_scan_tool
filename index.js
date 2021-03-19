@@ -2,20 +2,22 @@ const express = require('express');
 const path = require('path');
 const multer = require('multer');
 const fs = require('fs');
-// const pdf = require('pdf-parse');
+const pdf = require('pdf-parse');
 const bodyParser = require('body-parser');
-// const Worker = require('web-worker');
+// const Worker = require('web-worker');	
 const { v4: uuidv4 } = require('uuid');
+const validateUuid = require('uuid-validate');
 
-let scanid;
 // const myWorker = new Worker("worker.js");
 const app = express();
 // let allUnfoundWordsObject = {};
-// let percentageMatch;
+let percentageMatch;
+let scanid;
+let scanids = [];
 
-app.use(express.static(`${__dirname}/public`));
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.use(express.static(__dirname+'/public')); 
+app.set("views",path.join(__dirname,"views")) 
+app.set("view engine","ejs") 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -37,85 +39,95 @@ const upload = multer({
     if (mimetype && extname) {
       return cb(null, true);
     }
-    return cb(`${'Error: File upload only supports the '
+    cb(`${'Error: File upload only supports the '
       + 'following filetypes - '}${filetypes}`);
   },
 }).single('mybook');
 
-app.post('/processpdfbook', async (req, res) => {
-  upload(req, res, (err) => {
-    if (err) {
-      res.send(err);
-    } else {
-      scanid = req.file.filename;
-      const scanData = {
-        status: 'not_started',
-        upload_timestamp: Date.now(),
-        book_name: req.file.originalname,
-      };
-      fs.writeFile(`scans/${scanid}.json`, JSON.stringify(scanData), (err) => {
-        if (err) {
-          throw err;
-        }
-      });
-      res.render('scanpage', { scanid });
-    }
+const convertPdfToTxt = async (uploadedBookPath) => {
+  const dataBuffer = fs.readFileSync(uploadedBookPath);
+  let words = [];
+  await pdf(dataBuffer).then((data) => {
+    let pdfText = data.text.replace(/[\n\r]/g, ' ').replace(/[-—]/g, ' ').replace(/[^a-zA-Z ]/g, '').split(' ');
+    var filtered = pdfText.filter(function (el) {
+      return el != '' && el.length > 3;
+      // return el != '';
+    });
+    words = filtered
   });
-});
+  // console.log(words);
+  return words;
+};
 
-const groupWordsBycount = (words) => {
+const groupWordsBycount = async (words) => {
   const wordsToCount = {};
   for (let i = 0; i < words.length; i += 1) {
     if (wordsToCount[(words[i]).toLowerCase()] === undefined) { wordsToCount[(words[i]).toLowerCase()] = 0; }
     wordsToCount[(words[i]).toLowerCase()] += 1;
   }
   return wordsToCount;
+}
+
+function filterWord(word) {
+  if (word.length > 4){
+    return word
+  }
+}
+
+const processPDF = async (res, scanid) => {
+  const words = await convertPdfToTxt('uploads/' + scanid);
+  const filterWords = words.filter(filterWord)
+  const wordsToCount = await groupWordsBycount(filterWords);
+  // console.log(wordsToCount);
+  return wordsToCount
+  // myWorker.postMessage(words);
 };
 
-let jane = ['one', 'two', 'three', 'one', 'two', 'two']
-
-app.get('/scans/', (req, res) => {
-  res.render('status', { scanid });
-
-  app.get(`/scans/${scanid}`, (req, res) => {
-    // hello = {'hello': 'hello' }
-    // fs.writeFile('scans/' + scanid + '.json', JSON.stringify(hello), (err) => {
-    //   if (err) {
-    //       throw err;
-    //   }
-    // });
-
-    
-    var promise = new Promise(function(resolve, reject) {
+app.post('/processpdfbook', async (req, res) => {
+  upload(req, res, (err) => {
+    if (err) {
+      res.send(err);
+    } else {
+        scanid = req.file.filename;
       
-     resolve(groupWordsBycount(jane))
-     reject('no')
-    });
-    
-    promise.then((value) => {
-      console.log(value) // "Stuff worked!"
-      fs.writeFile('scans/' + scanid + '.json', JSON.stringify(value), (err) => {
-        if (err) {
-            throw err;
-        }
+        const promise1 = new Promise((resolve, reject) => {
+          resolve(processPDF(res, scanid));
+        })
+
+        promise1.then((value) => {
+        // console.log(value);
+         res.render('resultspage', { object: value })
+
       });
-      fs.readFile(`scans/${scanid}.json`, 'utf-8', (err, value) => {
-        if (err) {
-          throw err;
-        }
-        const datascan = JSON.parse(value.toString());
-        res.send(datascan)
-        // res.render('scans', {
-        //   scanid,
-        //   status: datascan.status,
-        //   bookname: datascan.book_name,
-        //   timestamp: datascan.upload_timestamp,
-        // });
-      });
-    })
-    
+      // res.render('words')
+      // allUnfoundWordsObject = {}
+      // scanid = req.file.filename;
+      // let bookName = req.file.originalname
+      // scanids.push({'scanid': scanid, 'bookName': bookName})
+      // const scanData = {
+      //   status: 'in-progress',
+      //   upload_timestamp: (new Date(Date.now())).toLocaleString(),
+      //   book_name: req.file.originalname,
+      // };
+      // fs.writeFile(`scans/${scanid}.json`, JSON.stringify(scanData), (err) => {
+      //   if (err) {
+      //     throw err;
+      //   }
+      // });
+      // res.render('scanpage');
+
+
+      // const promise1 = new Promise((resolve, reject) => {
+      //   resolve(processPDF(res, scanid));
+      // });
+      
+      // promise1.then((value) => {
+      //   console.log('>>>>>>>>>> Done processing');
+      // });
+    }
   });
 });
+
 
 app.get('/', (req, res) => {
   res.render('homepage');

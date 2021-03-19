@@ -9,39 +9,29 @@
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>  
 </head>
 <body>
-  <h2>Percentage Match is <% 
-     %>%</h2>
-  <div class="table-responsive">
-    <table id="table_id" class="display">
+  <!-- <h2>Percentage Match is <%#= percentageMatch %>%</h2> -->
+  <!-- <div class="table-responsive"> -->
+    <table id="mytable">
       <thead>
+      <tr>
+        <th>Word not Found in Dictionary</th>
+        <th>Word count</th>     
+     </tr>
+    </thead>
+    <tbody>
+      <% array.forEach(element => { %>
         <tr>
-          <th>Word not Found in Dictionary</th>
-          <th>Word count</th>     
-       </tr>
-      </thead>
-      <tbody>
-        
-  
-        
-        <% for (const key in object) { %>
-          <tr>
-            <td><%= key %></td>
-            <td><%= object[key] %></td>
-          </tr>
-          <% }; %>
-        </tbody>
+          <td><%= element %></td>
+          <td><%=  %></td>
+        </tr>
+        <% }); %>
+      </tbody>
     </table>
-    </div>
+    <!-- </div> -->
    <script>
-    // $(document).ready(function() {
-//     var table = $('#table_id').removeAttr('width').DataTable( {
-        
-//         columnDefs: [
-//             { width: 200 }
-//         ],
-//         fixedColumns: true
-//     } );
-// } );
+    $(document).ready( function () {
+        $('#myTable').DataTable();
+    } );
   </script>
   <style>
     body{
